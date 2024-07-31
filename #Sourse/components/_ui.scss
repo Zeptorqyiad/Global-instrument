@@ -4,17 +4,13 @@ $minwidth: 320px;
 $md1: 992.98px;
 $md2: 767.98px;
 $md3: 479.98px;
-// $ff1: Bebas Neue;
-// $ff2: PTSans;
-// $ff3: Roboto;
+
+$ff1: Stem;
+$ff2: Gotham;
 
 :root {
-	--main-color: ;
+	--dark-main-text: #1d1d1d;
+	--white-main-text: #ffffff;
+	--blue-color: #1d71a0;
+	--orange-color: #e04926;
 }
-
-// Break-points
-
-//$pc: em($containerWidth); // ПК, ноутбуки, некоторые планшеты в горизонтальном положении
-// $tablet: em(991.98); // Планшеты, некоторые мобильные устройства в горизонтальном положении
-// $mobile: em(767.98); // Телефоны
-// $mobileSmall: em(479.98); // Маленькие телефоны

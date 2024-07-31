@@ -1,5 +1,30 @@
 //ШРИФТ ПО УМОЛЧАНИЮ>
 
+@font-face {
+	font-family: "Stem SemiLight";
+	src: url("../../assets/fonts/Stem-SemiLight.ttf");
+	font-weight: 350;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Stem Medium";
+	src: url("../../assets/fonts/Stem-Medium.ttf");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Stem Bold";
+	src: url("../../assets/fonts/Stem-Bold.ttf");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Gotham";
+	src: url("../../assets/fonts/Gothampro_bold.ttf");
+	font-weight: 700;
+	font-style: normal;
+}
+
 // ФАЙЛ ОБНУЛЯЮЩИХ СТИЛЕЙ>
 @import "./components/nullstyle";
 
@@ -13,5 +38,3 @@
 @import "./Layouts/forms";
 @import "./components/ui";
 @import "./components/mixins";
-
-// ОСНОВНОЙ БЛОК>

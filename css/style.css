@@ -1,111 +1,146 @@
 @charset "UTF-8";
+@font-face {
+   font-family: 'Stem SemiLight';
+   src: url('../../assets/fonts/Stem-SemiLight.ttf');
+   font-weight: 350;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'Stem Medium';
+   src: url('../../assets/fonts/Stem-Medium.ttf');
+   font-weight: 500;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'Stem Bold';
+   src: url('../../assets/fonts/Stem-Bold.ttf');
+   font-weight: 700;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'Gotham';
+   src: url('../../assets/fonts/Gothampro_bold.ttf');
+   font-weight: 700;
+   font-style: normal;
+}
 /*Обнуление*/
 * {
-  padding: 0;
-  margin: 0;
-  border: 0;
+   padding: 0;
+   margin: 0;
+   border: 0;
 }
 
-*, *:before, *:after {
-  box-sizing: border-box;
+*,
+*:before,
+*:after {
+   box-sizing: border-box;
 }
 
-:focus, :active {
-  outline: none;
+:focus,
+:active {
+   outline: none;
 }
 
-a:focus, a:active {
-  outline: none;
+a:focus,
+a:active {
+   outline: none;
 }
 
-nav, footer, header, aside {
-  display: block;
+nav,
+footer,
+header,
+aside {
+   display: block;
 }
 
-html, body {
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  font-size: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
 }
 
-input, button, textarea {
-  font-family: inherit;
+input,
+button,
+textarea {
+   font-family: inherit;
 }
 
 input::-ms-clear {
-  display: none;
+   display: none;
 }
 
 button {
-  cursor: pointer;
+   cursor: pointer;
 }
 
 button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
+   padding: 0;
+   border: 0;
 }
 
-a, a:visited {
-  text-decoration: none;
+a,
+a:visited {
+   text-decoration: none;
 }
 
 a:hover {
-  text-decoration: none;
+   text-decoration: none;
 }
 
 ul li {
-  list-style: none;
+   list-style: none;
 }
 
 img {
-  vertical-align: top;
+   vertical-align: top;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: inherit;
-  font-weight: inherit;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: inherit;
 }
 
 /*--------------------*/
-[class*=__container] {
-  max-width: 1190px;
-  padding: 0 15px;
-  margin: 0 auto;
+:root {
+   --dark-main-text: #1d1d1d;
+   --white-main-text: #ffffff;
+   --blue-color: #1d71a0;
+   --orange-color: #e04926;
+}
+
+[class*='__container'] {
+   max-width: 1190px;
+   padding: 0 15px;
+   margin: 0 auto;
 }
 
 .wrapper {
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
 }
 
 body {
-  font-family: Stem;
-  font-size: 20px;
+   font-family: Stem;
+   font-size: 20px;
+   font-weight: 350;
 }
 
-@font-face {
-  font-family: "Stem";
-  src: url(../../assets/fonts/AnyConv.com__Stem-Medium.woff2);
-}
-@font-face {
-  font-family: "Stem";
-  src: url(../../assets/fonts/AnyConv.com__Stem-Bold.woff2);
-}
-@font-face {
-  font-family: "Stem";
-  src: url(../../assets/fonts/AnyConv.com__Stem-SemiLight.woff2);
-}
-@font-face {
-  font-family: "Gotham";
-  src: url(../../assets/fonts/gothampro_medium.woff2);
-}
 :root {
-  --main-color: ;
+   --dark-main-text: #1d1d1d;
+   --white-main-text: #ffffff;
+   --blue-color: #1d71a0;
+   --orange-color: #e04926;
 }
