@@ -630,18 +630,18 @@ details[open] {
 		line-height: 130%;
 		text-align: left;
 	}
-	a {
-		background-image: url("../../assets/image/footer/arrow.png");
-		background-position: left center;
-		background-repeat: no-repeat;
-		margin-top: 115px;
-		padding-left: 15px;
-		color: var(--blue-color);
-		font-family: $ff1;
-		font-size: 18px;
-		font-weight: 350;
-		line-height: 24px;
-	}
+}
+.btn-prev {
+	background-image: url("../../assets/image/footer/arrow.png");
+	background-position: left center;
+	background-repeat: no-repeat;
+	margin-top: 115px;
+	padding-left: 15px;
+	color: var(--blue-color);
+	font-family: $ff1;
+	font-size: 18px;
+	font-weight: 350;
+	line-height: 24px;
 }
 .contact-section__content-ls p:nth-child(3) {
 	margin-bottom: 20px;
@@ -649,4 +649,245 @@ details[open] {
 
 //=======================================================================
 
+//===============================Repair Page========================================
+
+.production {
+	margin: 66px 0 80px 0;
+}
+.production__content {
+	display: flex;
+	flex-direction: column;
+}
+.production__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	h2 {
+		color: rgb(0, 0, 0);
+		font-family: $ff1;
+		font-size: 48px;
+		font-weight: 500;
+		line-height: 48px;
+		text-align: left;
+		max-width: 558px;
+	}
+	margin-bottom: 37px;
+}
+.repair-btn-prev {
+	margin: 0;
+	float: inline-end;
+}
+.production__banner {
+	display: flex;
+	img {
+		position: relative;
+		margin-right: 79px;
+		z-index: 10;
+	}
+}
+.production__blocktext p {
+	color: rgb(0, 0, 0);
+	font-family: $ff1;
+	font-size: 20px;
+	font-weight: 350;
+	line-height: 130%;
+	text-align: left;
+}
+.production__blocktext p:not(:last-child) {
+	margin-bottom: 32px;
+}
+
 //=======================================================================
+
+//=======================================================================
+
+.repair-for {
+	margin-bottom: 80px;
+}
+.construction {
+	margin-bottom: 56px;
+}
+.construction__content h2 {
+	color: rgb(0, 0, 0);
+	font-family: $ff1;
+	font-size: 48px;
+	font-weight: 500;
+	line-height: 48px;
+	text-align: left;
+	max-width: 1008px;
+	margin-bottom: 60px;
+}
+.orange-text {
+	color: var(--orange-color);
+	font-family: $ff1;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 130%;
+	text-align: left;
+}
+.construction__items {
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 80px;
+}
+.construction__item {
+	max-width: 357px;
+}
+.construction__image-details {
+	width: 357px;
+	height: 236px;
+	box-sizing: border-box;
+	border: 1px solid rgb(0, 0, 0);
+	border-radius: 5px;
+	background: rgba(217, 217, 217, 0);
+	margin-bottom: 32px;
+	background-color: #fff;
+}
+//=======================================================================
+//=======================================================================
+.details-image-1,
+.details-image-2,
+.details-image-3 {
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-position: center center;
+}
+.details-image-1 {
+	background-image: url("../../assets/image/repairPage/M303-20 1.png");
+}
+.details-image-2 {
+	background-image: url("../../assets/image/repairPage/M301-303.png");
+}
+.details-image-3 {
+	background-image: url("../../assets/image/repairPage/M303-22 1.png");
+}
+.construction__btn {
+	box-sizing: border-box;
+	width: 218px;
+}
+.construction__item p:nth-child(2) {
+	color: rgb(0, 0, 0);
+	font-family: $ff1;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 130%;
+	text-align: left;
+	margin-bottom: 12px;
+}
+.construction__item p:nth-child(3) {
+	color: rgb(0, 0, 0);
+	font-family: $ff1;
+	font-size: 14px;
+	font-weight: 350;
+	line-height: 130%;
+	text-align: left;
+	margin-bottom: 14px;
+}
+.construction__block-image {
+	margin-top: 66px;
+}
+.markup-block {
+	content: "";
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.short-line ~ .text-line {
+	position: relative;
+}
+.short-line ~ p {
+	position: absolute;
+	width: 0;
+	top: -23px;
+	left: -88px;
+}
+.short-line ~ span {
+	position: absolute;
+	width: 0;
+	top: -23px;
+	left: -260px;
+}
+.construction__zone-text {
+	color: rgb(0, 0, 0);
+	font-family: $ff1;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 130%;
+	text-align: left;
+	margin-bottom: 22px;
+}
+.construction__zone-choose {
+	color: rgb(0, 0, 0);
+	font-family: $ff1;
+	font-size: 24px;
+	font-weight: 350;
+	line-height: 220%;
+	padding-left: 50px;
+}
+.choose-1 {
+	background-image: url("../../assets/image/repairPage/A-text.png");
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+.choose-2 {
+	background-image: url("../../assets/image/repairPage/B-text.png");
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+.choose-3 {
+	background-image: url("../../assets/image/repairPage/C-text.png");
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+
+//=======================================================================
+
+//=======================================================================
+
+.system-image-1 {
+	background-image: url("../../assets/image/repairPage/M302L 1.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.system-image-2 {
+	background-image: url("../../assets/image/repairPage/M301-303.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.system-image-3 {
+	background-image: url("../../assets/image/repairPage/M302R 1.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+//=======================================================================
+//=======================================================================
+
+.repair__grid {
+	margin-top: 40px;
+	margin-bottom: 50px;
+	display: grid;
+	grid-template-columns: repeat(3, 357px);
+	grid-template-rows: repeat(2, 1fr);
+	grid-gap: 40px;
+}
+.grid-item {
+	img {
+		margin-bottom: 30px;
+	}
+	p {
+		margin-bottom: 24px;
+		color: rgb(0, 0, 0);
+		font-family: $ff1;
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 24px;
+		text-align: left;
+	}
+}
+.grid-item__btn {
+	box-sizing: border-box;
+	width: 200px;
+}
