@@ -72,12 +72,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-:root {
-  --main-color: ;
-}
-
-main [class*=__container] {
-  max-width: 800px;
+[class*=__container] {
+  max-width: 1190px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -89,6 +86,26 @@ main [class*=__container] {
 }
 
 body {
-  font-family: 992.98px;
-  font-size: 12px;
+  font-family: Stem;
+  font-size: 20px;
+}
+
+@font-face {
+  font-family: "Stem";
+  src: url(../../assets/fonts/AnyConv.com__Stem-Medium.woff2);
+}
+@font-face {
+  font-family: "Stem";
+  src: url(../../assets/fonts/AnyConv.com__Stem-Bold.woff2);
+}
+@font-face {
+  font-family: "Stem";
+  src: url(../../assets/fonts/AnyConv.com__Stem-SemiLight.woff2);
+}
+@font-face {
+  font-family: "Gotham";
+  src: url(../../assets/fonts/gothampro_medium.woff2);
+}
+:root {
+  --main-color: ;
 }
