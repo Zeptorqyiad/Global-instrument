@@ -891,3 +891,74 @@ details[open] {
 	box-sizing: border-box;
 	width: 200px;
 }
+
+//=======================================================================
+//=======================================================================
+.incisors {
+	margin: 64px 0 74px 0;
+}
+.incisors__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-items: flex-start;
+}
+.incisors__wrapper h2 {
+	color: rgb(0, 0, 0);
+	font-family: $ff1;
+	font-size: 48px;
+	font-weight: 500;
+	line-height: 20px;
+	text-align: left;
+	margin-bottom: 42px;
+}
+.incisors__grid {
+	display: grid;
+	grid-template-columns: repeat(3, 357px);
+	grid-template-rows: repeat(3, 1fr);
+	grid-gap: 50px;
+	margin-bottom: 50px;
+}
+.grid-item-image {
+	width: 357px;
+	height: 236px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	margin-bottom: 28px;
+	background-color: var(--white-color);
+}
+.grid-item-title {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: rgb(0, 0, 0);
+	font-family: $ff1;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 130%;
+	text-align: left;
+	margin-bottom: 10px;
+	span {
+		color: rgb(0, 0, 0);
+		font-family: $ff1;
+		font-size: 18px;
+		font-weight: 350;
+		line-height: 130%;
+		text-align: left;
+	}
+}
+.grid-item-subtitle {
+	max-width: 207px;
+	color: rgb(0, 0, 0);
+	font-family: $ff1;
+	font-size: 14px;
+	font-weight: 350;
+	line-height: 130%;
+	text-align: left;
+	margin-bottom: 14px;
+}
+.incisors-image-1 {
+	background-image: url("../../assets/image/Incisors/M6.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
