@@ -2,13 +2,13 @@
 <html lang="ru">
 
 <head>
-	<title></title>
+	<title>Мировой инструмент</title>
 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 	<meta name="format-detection" content="telephone=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/style.css" />
-	<!-- <link rel="icon" href="img/" type="image/x-icon"> -->
+	<link rel="icon" href="./assets/icon/Logo.ico" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 </head>
 
@@ -36,8 +36,8 @@
 								<li><a href="#about" class="menu__link">О компании</a></li>
 								<li><a href="#services" class="menu__link">Услуги</a></li>
 								<li><a href="#promo" class="menu__link">Акции</a></li>
-								<li><a href="" class="menu__link">Примеры работ</a></li>
-								<li><a href="" class="menu__link">Контакты</a></li>
+								<li><a href="#examples" class="menu__link">Примеры работ</a></li>
+								<li><a href="./html/contacts.html" class="menu__link">Контакты</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -189,7 +189,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="examples">
+			<section id="examples" class="examples">
 				<div class="examples__container">
 					<div class="examples__content">
 						<h2 class="about__title">Примеры работ</h2>
@@ -225,25 +225,145 @@
 			</section>
 			<section class="faq">
 				<div class="faq__container">
-					<details>
-						<summary>Вопрос 1: Какая-то информация?</summary>
-						<p>Ответ на вопрос 1: Это информация о чем-то важном.</p>
+					<h2>Ответы на часто задаваемые вопросы</h2>
+					<details class="details">
+						<summary class="summary">
+							<span>
+								Цена и сроки поставки нового и капитально-отремонтированного барабана.
+							</span>
+						</summary>
+						<p>
+							Цену можно уточнить у нашего менеджера. При 70% предоплате <br> предоставляется скидка 4%, а при
+							100% -
+							6%.
+						</p>
+						<img class="faq-image" src="./assets/image/main/white-arrow.svg" alt="Arrow">
 					</details>
 					<details>
-						<summary>Вопрос 2: Какая-то другая информация?</summary>
-						<p>Ответ на вопрос 2: Это информация о чем-то другом важном.</p>
+						<summary>
+							<span>
+								Ресурс работы барабана после капитального ремонта. Варианты его <br>
+								исполнения из разных комплектующих и с разной шириной линий <br>
+								резания.
+							</span>
+						</summary>
+						<p>Ответ на вопрос 2</p>
+						<img class="faq-image" src="./assets/image/main/white-arrow.svg" alt="Arrow">
+					</details>
+					<details>
+						<summary>
+							<span>
+								Возможность балансировки барабана и обучения персонала <br> его правильной эксплуатации.
+							</span>
+						</summary>
+						<p>Ответ на вопрос 3</p>
+						<img class="faq-image" src="./assets/image/main/white-arrow.svg" alt="Arrow">
+					</details>
+					<details>
+						<summary>
+							<span>
+								Возможность выездной диффектовки и ремонта фрезерного барабана. <br>
+								Возможность частичного ремонта торцевых зон барабана.
+							</span>
+						</summary>
+						<p>Ответ на вопрос 4</p>
+						<img class="faq-image" src="./assets/image/main/white-arrow.svg" alt="Arrow">
+					</details>
+					<details>
+						<summary>
+							<span>
+								Рекомендации по использованию дорожных резцов при <br>
+								разных условиях фрезерования (прочность асфальтобетона,<br>
+								глубина фрезерования, температура, чистота фрезерования).
+							</span>
+						</summary>
+						<p>Ответ на вопрос 5</p>
+						<img class="faq-image" src="./assets/image/main/white-arrow.svg" alt="Arrow">
+					</details>
+					<details>
+						<summary>
+							<span>
+								Ресурс работы дорожных резцов и их расход в М² или <br>
+								М³. Рекомендации по износу и замене резцов.
+							</span>
+						</summary>
+						<p>Ответ на вопрос 6</p>
+						<img class="faq-image" src="./assets/image/main/white-arrow.svg" alt="Arrow">
+					</details>
+					<details>
+						<summary>
+							<span>
+								Ресурс работы резцедержателей в моточасах и <br>
+								рекомендации по их своевременной замене.
+							</span>
+						</summary>
+						<p>Ответ на вопрос 7</p>
+						<img class="faq-image" src="./assets/image/main/white-arrow.svg" alt="Arrow">
 					</details>
 				</div>
 			</section>
 		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__content">
+					<div class="footer__image-links">
+						<img src="./assets/image/footer/logo.png" alt="Logotype">
+						<div class="footer-links">
+							<a href=""><img src="./assets/image/footer/whatsApp.png" alt="whatsApp"></a>
+							<a href=""><img src="./assets/image/footer/TG.png" alt="Telegram"></a>
+							<a href=""><img src="./assets/image/footer/Youtube.png" alt="Youtube"></a>
+							<a href=""><img src="./assets/image/footer/vk.png" alt="VK"></a>
+							<a href=""><img src="./assets/image/footer/ОК.png" alt="OK"></a>
+						</div>
+					</div>
+					<ul class="footer__column-1">
+						<a href="#about">
+							<li>О компании</li>
+						</a>
+						<a href="#services">
+							<li>Услуги</li>
+						</a>
+						<a href="#promo">
+							<li>Акции</li>
+						</a>
+						<a href="#examples">
+							<li>Примеры работ</li>
+						</a>
+						<a href="./html/contacts.html">
+							<li>Контакты</li>
+						</a>
+					</ul>
+					<ul class="footer__column-2">
+						<a href="">
+							<li>Ремонт барабанов</li>
+						</a>
+						<a href="">
+							<li>Дорожные резцы</li>
+						</a>
+						<a href="">
+							<li>Запасные части</li>
+						</a>
+					</ul>
+					<div class="footer__contacts">
+						<div class="footer__tel">
+							<h6>Контактный телефон</h6>
+							<a href="tel:88007071608">8 800 707-16-08</a>
+							<a href="tel:+74951616333">+7 495 161-63-33</a>
+						</div>
+						<div class="footer__adress">
+							<h6>Адрес:</h6>
+							<p>г. Москва, ул. Кольская, дом 1</p>
+						</div>
+						<div class="footer__time">
+							<h6>Время работы:</h6>
+							<p>Пн-Пт: с 10:00 до 20:00</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</div>
-	</section>
-	</main>
-	<footer></footer>
-	</div>
-	<!-- Подключаем Swiper -->
 	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-	<!-- Подключаем файл JS скриптов -->
 	<script src="js/script.js"></script>
 </body>
 
