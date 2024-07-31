@@ -15,10 +15,149 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
-			<p class="header-text">Привет</p>
+			<div class="header__container">
+				<div class="header__content-top __container">
+					<a href="./index.html" class="header__logo">
+						<img src="./assets/image/header/Logo.png" alt="Logotype">
+					</a>
+					<div class="header__menu menu">
+						<div class="menu__icon icon-menu">
+							<span>О компании</span>
+							<span>Услуги</span>
+							<span>Акции</span>
+							<span>Примеры работ</span>
+							<span>Контакты</span>
+							<span>Ремонт барабанов</span>
+							<span>Дорожные резцы</span>
+							<span>Запасные части</span>
+						</div>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li><a href="#about" class="menu__link">О компании</a></li>
+								<li><a href="" class="menu__link">Услуги</a></li>
+								<li><a href="" class="menu__link">Акции</a></li>
+								<li><a href="" class="menu__link">Примеры работ</a></li>
+								<li><a href="" class="menu__link">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+					<button class="header__btn-application">Оставить заявку</button>
+				</div>
+			</div>
+			<div class="header__content-bottom">
+				<div class="header__content-bottom__container">
+					<nav class="menu__body">
+						<ul class="menu__list bottom__list">
+							<li><a href="" class="header__link-bottom">Ремонт барабанов</a></li>
+							<li><a href="" class="header__link-bottom">Дорожные резцы</a></li>
+							<li><a href="" class="header__link-bottom">Запасные части</a></li>
+						</ul>
+					</nav>
+					<button class="header__btn-application callback__btn">Заказать звонок</button>
+				</div>
+			</div>
 		</header>
-		<main></main>
-		<footer></footer>
+		<main class="main">
+			<section class="banner">
+				<div class="banner__container">
+					<div class="banner__content">
+						<h1 class="banner__title">
+							ПРОФЕССИОНАЛЬНЫЙ РЕМОНТ ФРЕЗЕРНЫХ БАРАБАНОВ.
+							<br>БАЛАНСИРОВКА.
+							<br>МЕТАЛЛООБРАБОТКА.
+						</h1>
+						<button class="header__btn-application">Узнать подробнее</button>
+					</div>
+				</div>
+			</section>
+			<section id="about" class="about">
+				<div class="about__container">
+					<div class="about__content">
+						<h2 class="about__title">О компании</h2>
+						<p class="about__text">
+							Компания «Мировой Инструмент» является разработчиком и производителем фрезерных барабанов
+							для дорожных, строительных и горных машин отечественного и импортного производства.
+						</p>
+						<p class="about__text">
+							Осуществляет металлообработку и изготовление запасных частей, а также поставки дорожных,
+							строительных, бурильных, траншейных, горных резцов и резцедержателей. Выполняет балансировку
+							фрезерных барабанов, роторов и других вращающихся агрегатов.
+						</p>
+						<div class="about__tabs">
+							<div class="tabs">
+								<div class="tab-content" id="content-1">
+									Мы обладаем всеми компетенциями для ремонта и производства фрезерных барабанов с возможностью
+									полного и качественного их восстановления на нашем предприятии, оптимально решая вопрос
+									импортозамещения для российского рынка.
+								</div>
+								<div class="tab-content" id="content-2">
+									Цех нашей компании оснащён всем необходимым технологическим оборудованием, а также
+									оригинальными сборочными стендами собственной разработки, позволяющими выполнять полный цикл
+									производства и ремонта фрезерных барабанов.
+								</div>
+								<div class="tab-content" id="content-3">
+									Используемое нашей компанией оборудование позволяет также осуществлять работы
+									по металлообработке различных узлов, деталей и запасных частей для дорожно-строительных машин
+									и механизмов. Возможность выполнения работ по резке, фрезеровке, сверловке, токарной
+									обработке, сварке и покраске позволяет нам изготавливать широкий спектр деталей и различных
+									металлоконструкций.
+								</div>
+								<div class="tab-content" id="content-4">
+									Мы также имеем эксклюзивную возможность производить балансировку различных узлов и агрегатов
+									на нашем новом стенде, весом деталей до 4,5 тонн. Это могут быть роторы, фрезерные барабаны,
+									металлические валы, трубы и другие детали.
+								</div>
+								<div class="tab-content" id="content-5">
+									Наша компания также производит и поставляет в Россию различный твёрдосплавный инструмент.
+									Дорожные, строительные, горные резцы и металлообрабатывающие пластины, которые
+									изготавливаются по нашим чертежам и нашим техническим требованиям в Китае и имеют наш
+									собственный бренд «Мировой Инструмент».
+								</div>
+								<div class="tab-content" id="content-6">
+									Мы производим различные запасные части и детали по заявкам заказчиков для решения вопроса
+									импортозамещения в России.
+								</div>
+								<article class="tab-nav">
+									<input checked id="tab-btn-1" name="tab-btn" type="radio" value="">
+									<label for="tab-btn-1">Опыт и компетенции</label>
+									<input id="tab-btn-2" name="tab-btn" type="radio" value="">
+									<label for="tab-btn-2">Высокотехнологичное производство</label>
+									<input id="tab-btn-3" name="tab-btn" type="radio" value="">
+									<label for="tab-btn-3">Металлообработка, изготовление деталей и металлоконструкций</label>
+									<input id="tab-btn-4" name="tab-btn" type="radio" value="">
+									<label for="tab-btn-4">Опыт и компетенции</label>
+									<input id="tab-btn-5" name="tab-btn" type="radio" value="">
+									<label for="tab-btn-5">Высокотехнологичное производство</label>
+									<input id="tab-btn-6" name="tab-btn" type="radio" value="">
+									<label for="tab-btn-6">Металлообработка, изготовление деталей и металлоконструкций</label>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="services">
+				<div class="services__container">
+					<div class="services__content">
+						<h2 class="services__title">Услуги и продукция</h2>
+						<div class="services__items">
+							<div class="services__item">
+								<h3>Производство и ремонт фрезерных барабанов</h3>
+								<p>Высокие стандарты качества, максимальная производительность и ремонтопригодность.</p>
+							</div>
+							<div class="services__item"></div>
+							<div class="services__item"></div>
+							<div class="services__item"></div>
+							<div class="services__item"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+	</section>
+	</main>
+	<footer></footer>
 	</div>
 	<!-- Подключаем Swiper -->
 	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
