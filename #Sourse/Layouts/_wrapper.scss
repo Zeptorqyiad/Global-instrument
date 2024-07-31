@@ -11,6 +11,11 @@
 	min-height: 100%;
 	background-color: var(--bg-color);
 }
+main {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 100%;
+}
 
 html {
 	scroll-behavior: smooth;
