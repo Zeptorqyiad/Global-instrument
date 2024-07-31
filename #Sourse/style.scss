@@ -1,0 +1,16 @@
+//ШРИФТ ПО УМОЛЧАНИЮ>
+
+// ФАЙЛ ОБНУЛЯЮЩИХ СТИЛЕЙ>
+@import "./components/nullstyle";
+
+// ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>
+@import "./Layouts/header";
+@import "./Layouts/footer";
+@import "./Layouts/wrapper";
+
+//ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>
+@import "./Layouts/forms";
+@import "./components/ui";
+@import "./components/mixins";
+
+// ОСНОВНОЙ БЛОК>
