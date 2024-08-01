@@ -41,7 +41,7 @@
 							</ul>
 						</nav>
 					</div>
-					<button class="header__btn-application">Оставить заявку</button>
+					<a href="#popup" class="header__btn-application popup-link">Оставить заявку</a>
 				</div>
 			</div>
 			<div class="header__content-bottom">
@@ -53,7 +53,7 @@
 							<li><a href="" class="header__link-bottom">Запасные части</a></li>
 						</ul>
 					</nav>
-					<button class="header__btn-application callback__btn">Заказать звонок</button>
+					<a class="header__btn-application callback__btn">Заказать звонок</a>
 				</div>
 			</div>
 		</header>
@@ -66,7 +66,7 @@
 							<br>БАЛАНСИРОВКА.
 							<br>МЕТАЛЛООБРАБОТКА.
 						</h1>
-						<button class="header__btn-application">Узнать подробнее</button>
+						<a href="./html/repair.html" class="header__btn-application">Узнать подробнее</a>
 					</div>
 				</div>
 			</section>
@@ -185,7 +185,7 @@
 				<div class="promo__container">
 					<div class="promo__content">
 						<h3>Оставьте заявку прямо сейчас и получите скидку 3%</h3>
-						<button class="header__btn-application promo__btn">Оставить заявку</button>
+						<a href="#popup" class="header__btn-application promo__btn popup-link">Оставить заявку</a>
 					</div>
 				</div>
 			</section>
@@ -362,6 +362,26 @@
 				</div>
 			</div>
 		</footer>
+		<div id="popup" class="popup">
+			<div class="popup__body">
+				<div class="popup__content">
+					<a href="#" class="popup__close close-popup"></a>
+					<p>У Вас есть вопросы ? Оставьте заявку ! И мы перезвоним Вам !</p>
+					<label class="input-wrapper" for="">
+						<div class="input-ls">
+							<input type="text" placeholder="Ваше имя" name="name" required>
+							<input type="email" placeholder="Ваша электронная почта" name="email" required>
+						</div>
+						<div class="input-rs">
+							<input type="tel" placeholder="Ваш телефон" required>
+							<input type="text" placeholder="Город" required>
+						</div>
+						<textarea cols="468" rows="4" charswidth="23" name="" placeholder="Задайте Ваш вопрос"></textarea>
+					</label>
+					<button type="submit" class="header__btn-application">Оставить заявку</button>
+				</div>
+			</div>
+		</div>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 	<script src="js/script.js"></script>
