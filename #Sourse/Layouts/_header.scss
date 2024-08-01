@@ -45,7 +45,9 @@
 	line-height: 24px;
 	margin-right: 50px;
 }
+
 .header__btn-application {
+	position: relative;
 	cursor: pointer;
 	height: 45px;
 	color: var(--white-color);
@@ -1148,8 +1150,77 @@ textarea {
 .form__input._error {
 	background: rgba(224, 73, 38, 0.15);
 }
+.link-from-3 {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.top-btn {
+	margin-top: 14px 0 0 0;
+}
+
+//=======================================================================
+//=======================================================================
+
+.reserve {
+	margin-top: 224px;
+	margin-bottom: 80px;
+}
+.reserve__content {
+	display: flex;
+	flex-direction: column;
+}
+.reserve__wrapper {
+	display: flex;
+	gap: 22px;
+	justify-content: space-between;
+	align-items: stretch;
+	margin-bottom: 40px;
+	h2 {
+		color: rgb(0, 0, 0);
+		font-family: $ff1;
+		font-size: 48px;
+		font-weight: 500;
+		line-height: 20px;
+		text-align: left;
+	}
+	span {
+		color: rgb(0, 0, 0);
+		font-family: $ff1;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 130%;
+		text-align: left;
+		display: flex;
+		flex: 1 1 auto;
+	}
+}
+.reserve__banner {
+	display: flex;
+	gap: 102px;
+}
+.reserve__image {
+	position: relative;
+	width: 848px;
+	height: 100%;
+}
+.reserve__block {
+	min-width: 214px;
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+	p {
+		color: rgb(0, 0, 0);
+		font-family: $ff1;
+		font-size: 20px;
+		font-weight: 350;
+		line-height: 130%;
+		text-align: left;
+	}
+}
+._center {
+	text-align: center;
+}
 
 // !TODO: Адаптив
 // !TODO: faq доделать svg
-// !TODO: popap
-// !TODO: страница карточек
