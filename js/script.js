@@ -1,4 +1,13 @@
-// 'use strict'
+// Бургер меню
+let burgerIcon = document.querySelector('.burger__line')
+let burgerList = document.querySelector('.icon-menu')
+
+burgerIcon.addEventListener('click', () => {
+   if (burgerIcon) {
+      burgerIcon.classList.toggle('active')
+      burgerList.classList.toggle('active')
+   }
+})
 
 // FAQ
 document.querySelectorAll('.faq__container details').forEach((item) => {
