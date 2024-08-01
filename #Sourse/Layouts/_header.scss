@@ -464,6 +464,9 @@ details {
 	border-radius: 10px;
 	background: var(--white-color);
 	margin-bottom: 15px;
+	background-image: url("../../assets/image/main/orange-arrow.svg");
+	background-repeat: no-repeat;
+	background-position: 98% 40%;
 }
 summary {
 	padding: 40px;
@@ -1222,5 +1225,7 @@ textarea {
 	text-align: center;
 }
 
+//=======================================================================
+//=======================================================================
+
 // !TODO: Адаптив
-// !TODO: faq доделать svg
