@@ -17,7 +17,7 @@
 		<header class="header">
 			<div class="header__container">
 				<div class="header__content-top __container">
-					<a href="./index.html" class="header__logo">
+					<a href="../index.html" class="header__logo">
 						<img src="../assets/image/header/Logo.png" alt="Logotype">
 					</a>
 					<div class="header__menu menu">
@@ -33,10 +33,10 @@
 						</div>
 						<nav class="menu__body">
 							<ul class="menu__list">
-								<li><a href="#about" class="menu__link">О компании</a></li>
-								<li><a href="#services" class="menu__link">Услуги</a></li>
-								<li><a href="#promo" class="menu__link">Акции</a></li>
-								<li><a href="#examples" class="menu__link">Примеры работ</a></li>
+								<li><a href="../index.html#about" class="menu__link">О компании</a></li>
+								<li><a href="../index.html#services" class="menu__link">Услуги</a></li>
+								<li><a href="../index.html#promo" class="menu__link">Акции</a></li>
+								<li><a href="../index.html#examples" class="menu__link">Примеры работ</a></li>
 								<li><a href="./contacts.html" class="menu__link">Контакты</a></li>
 							</ul>
 						</nav>
@@ -48,12 +48,12 @@
 				<div class="header__content-bottom__container">
 					<nav class="menu__body">
 						<ul class="menu__list bottom__list">
-							<li><a href="./html/repair.html" class="header__link-bottom">Ремонт барабанов</a></li>
+							<li><a href="./repair.html" class="header__link-bottom">Ремонт барабанов</a></li>
 							<li><a href="./incisors.html" class="header__link-bottom">Дорожные резцы</a></li>
 							<li><a href="" class="header__link-bottom">Запасные части</a></li>
 						</ul>
 					</nav>
-					<a class="header__btn-application callback__btn">Заказать звонок</a>
+					<a href="#popup-2" class="header__btn-application callback__btn popup-link">Заказать звонок</a>
 				</div>
 			</div>
 		</header>
@@ -282,18 +282,46 @@
 				<div class="popup__content">
 					<a href="#" class="popup__close close-popup"></a>
 					<p>У Вас есть вопросы ? Оставьте заявку ! И мы перезвоним Вам !</p>
-					<label class="input-wrapper" for="">
-						<div class="input-ls">
-							<input type="text" placeholder="Ваше имя" name="name" required>
-							<input type="email" placeholder="Ваша электронная почта" name="email" required>
-						</div>
-						<div class="input-rs">
-							<input type="tel" placeholder="Ваш телефон" required>
-							<input type="text" placeholder="Город" required>
-						</div>
-						<textarea cols="468" rows="4" charswidth="23" name="" placeholder="Задайте Ваш вопрос"></textarea>
-					</label>
-					<button type="submit" class="header__btn-application">Оставить заявку</button>
+					<div class="input-wrapper">
+						<form class="form" id="form" class="form__body">
+							<div class="input-ls">
+								<input class="form__input _req" type="text" placeholder="Ваше имя" name="name" required>
+								<input class="form__input _req _email" type="email" placeholder="Ваша электронная почта" name="email"
+									required>
+							</div>
+							<div class="input-rs">
+								<input class="form__input _req" type="tel" name="tel" placeholder="Ваш телефон" required>
+								<input class="form__input _req" type="text" name="city" placeholder="Город" required>
+							</div>
+							<textarea class="form__input _req" cols="468" rows="4" charswidth="23" name="textarea"
+								placeholder="Задайте Ваш вопрос"></textarea>
+							<button type="submit" id="req" class="header__btn-application">Оставить заявку</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="popup-2" class="popup">
+			<div class="popup__body">
+				<div class="popup__content">
+					<a href="#" class="popup__close close-popup"></a>
+					<p>У Вас есть вопросы ? Оставьте заявку ! И мы перезвоним Вам !</p>
+					<div class="input-wrapper">
+						<form class="form" id="form" class="form__body">
+							<div class="input-ls">
+								<input class="form__input _req" type="text" placeholder="Ваше имя" name="name" required>
+								<input class="form__input _req _email" type="email" placeholder="Ваша электронная почта" name="email"
+									required>
+							</div>
+							<div class="input-rs">
+								<input class="form__input _req" type="tel" name="tel" placeholder="Ваш телефон" required>
+								<input class="form__input _req" type="text" name="city" placeholder="Город" required>
+							</div>
+							<textarea class="form__input _req" cols="468" rows="4" charswidth="23" name="textarea"
+								placeholder="Задайте Ваш вопрос" required></textarea>
+							<button type="submit" id="req" class="header__btn-application">Заказать звонок</button>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -1047,6 +1047,22 @@ details[open] {
 	opacity: 0;
 	transform: translate(0px, -100%);
 }
+.popup__content::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(51, 51, 51, 0.9) url("../../assets/icon/5.gif") center / 50px no-repeat;
+	opacity: 0;
+	visibility: hidden;
+}
+.popup__content._sending::after {
+	opacity: 1;
+	visibility: visible;
+}
+
 .popup__content p {
 	color: rgb(0, 0, 0);
 	font-family: $ff1;
@@ -1078,6 +1094,7 @@ details[open] {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
+	margin: 0 20px 20px 0;
 }
 .input-rs {
 	display: flex;
@@ -1101,14 +1118,21 @@ input {
 		text-align: left;
 	}
 }
+.form {
+	display: flex;
+	flex-wrap: wrap;
+}
 textarea {
 	padding: 11px 16px;
 	border-radius: 10px;
 	box-sizing: border-box;
+	resize: vertical;
+	max-width: 468px;
 	border: 1px solid rgb(224, 73, 38);
 	border-radius: 10px;
 	background: rgba(217, 217, 217, 0);
 	resize: none;
+	margin-bottom: 20px;
 	&::placeholder {
 		color: rgb(147, 147, 147);
 		font-family: $ff1;
@@ -1117,6 +1141,12 @@ textarea {
 		line-height: 150%;
 		text-align: left;
 	}
+}
+.form__input {
+	background-color: var(--white-color);
+}
+.form__input._error {
+	background: rgba(224, 73, 38, 0.15);
 }
 
 // !TODO: Адаптив

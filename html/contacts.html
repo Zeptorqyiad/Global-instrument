@@ -41,7 +41,7 @@
 							</ul>
 						</nav>
 					</div>
-					<button class="header__btn-application">Оставить заявку</button>
+					<a href="#popup" class="header__btn-application popup-link">Оставить заявку</a>
 				</div>
 			</div>
 			<div class="header__content-bottom">
@@ -53,7 +53,7 @@
 							<li><a href="" class="header__link-bottom">Запасные части</a></li>
 						</ul>
 					</nav>
-					<button class="header__btn-application callback__btn">Заказать звонок</button>
+					<a href="#popup-2" class="header__btn-application callback__btn popup-link">Заказать звонок</a>
 				</div>
 			</div>
 		</header>
@@ -137,6 +137,55 @@
 				</div>
 			</div>
 		</footer>
+		<div id="popup" class="popup">
+			<div class="popup__body">
+				<div class="popup__content">
+					<a href="#" class="popup__close close-popup"></a>
+					<p>У Вас есть вопросы ? Оставьте заявку ! И мы перезвоним Вам !</p>
+					<div class="input-wrapper">
+						<form class="form" id="form" class="form__body">
+							<div class="input-ls">
+								<input class="form__input _req" type="text" placeholder="Ваше имя" name="name" required>
+								<input class="form__input _req _email" type="email" placeholder="Ваша электронная почта"
+									name="email" required>
+							</div>
+							<div class="input-rs">
+								<input class="form__input _req" type="tel" name="tel" placeholder="Ваш телефон" required>
+								<input class="form__input _req" type="text" name="city" placeholder="Город" required>
+							</div>
+							<textarea class="form__input _req" cols="468" rows="4" charswidth="23" name="textarea"
+								placeholder="Задайте Ваш вопрос"></textarea>
+							<button type="submit" id="req" class="header__btn-application">Оставить заявку</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="popup-2" class="popup">
+			<div class="popup__body">
+				<div class="popup__content">
+					<a href="#" class="popup__close close-popup"></a>
+					<p>У Вас есть вопросы ? Оставьте заявку ! И мы перезвоним Вам !</p>
+					<div class="input-wrapper">
+						<form class="form" id="form" class="form__body">
+							<div class="input-ls">
+								<input class="form__input _req" type="text" placeholder="Ваше имя" name="name" required>
+								<input class="form__input _req _email" type="email" placeholder="Ваша электронная почта"
+									name="email" required>
+							</div>
+							<div class="input-rs">
+								<input class="form__input _req" type="tel" name="tel" placeholder="Ваш телефон" required>
+								<input class="form__input _req" type="text" name="city" placeholder="Город" required>
+							</div>
+							<textarea class="form__input _req" cols="468" rows="4" charswidth="23" name="textarea"
+								placeholder="Задайте Ваш вопрос" required></textarea>
+							<button type="submit" id="req" class="header__btn-application">Заказать звонок</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 	<script src="../js/script.js"></script>

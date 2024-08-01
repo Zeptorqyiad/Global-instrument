@@ -1,3 +1,5 @@
+// 'use strict'
+
 // FAQ
 document.querySelectorAll('.faq__container details').forEach((item) => {
    item.addEventListener('toggle', (event) => {
@@ -50,8 +52,6 @@ function popupOpen(curentPopup) {
       const popupActive = document.querySelector('.popup.open')
       if (popupActive) {
          popupCLose(popupActive, active)
-      } else {
-         bodyLock()
       }
       curentPopup.classList.add('open')
       curentPopup.addEventListener('click', function (e) {
@@ -64,37 +64,7 @@ function popupOpen(curentPopup) {
 function popupCLose(popupActive, doUnlock = true) {
    if (unlock) {
       popupActive.classList.remove('open')
-      if (doUnlock) {
-         bodyUnlock()
-      }
    }
-}
-function bodyLock() {
-   for (let index = 0; index < lockPadding.length; index++) {
-      const el = lockPadding[index]
-   }
-   body.classList.add('lock')
-
-   unlock = false
-   setTimeout(function () {
-      unlock = true
-   }, timeout)
-}
-
-function bodyUnlock() {
-   setTimeout(function () {
-      for (let index = 0; index < lockPadding.length; index++) {
-         const el = lockPadding[index]
-         el.style.paddingRight = '0px'
-      }
-      body.style.paddingRight = '0px'
-      body.classList.remove('lock')
-   }, timeout)
-
-   unlock = false
-   setTimeout(function () {
-      unlock = true
-   }, timeout)
 }
 
 document.addEventListener('keydown', function (e) {
@@ -124,3 +94,66 @@ document.addEventListener('keydown', function (e) {
          Element.prototype.msMatchesSelector
    }
 })()
+
+// Отправка формы
+document.addEventListener('DOMContentLoaded', function () {
+   const form = document.getElementById('form')
+   form.addEventListener('submit', formSend)
+
+   async function formSend(e) {
+      e.preventDefault()
+      let error = formValidate(form)
+
+      let formData = new FormData(form)
+
+      if (error === 0) {
+         form.classList.add('_sending')
+         let response = await fetch('sendmail.php', {
+            method: 'POST',
+            body: formData,
+         })
+         if (response.ok) {
+            let result = await response.json()
+            alert(result.message)
+            formPreview.innerHTML = ''
+            form.reset()
+            form.classList.remove('_sending')
+         }
+      } else {
+      }
+   }
+
+   function formValidate(form) {
+      let error = 0
+      let formReq = document.querySelectorAll('._req')
+
+      for (let index = 0; index < formReq.length; index++) {
+         const input = formReq[index]
+         formRemoveError(input)
+
+         if (input.classList.contains('_email')) {
+            if (emailText(input)) {
+               formAddError(input)
+               error++
+            }
+         } else {
+            if (input.value === '') {
+               formAddError(input)
+               error++
+            }
+         }
+      }
+      return error
+   }
+   function formAddError(input) {
+      input.parentElement.classList.add('_error')
+      input.classList.add('_error')
+   }
+   function formRemoveError(input) {
+      input.parentElement.classList.remove('_error')
+      input.classList.remove('_error')
+   }
+   function emailText(input) {
+      return !/^\w+[-_\.]*\w+@\w+-?\w+\.[a-z]{2,4}$/.test(input.value)
+   }
+})

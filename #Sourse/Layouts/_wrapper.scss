@@ -11,6 +11,9 @@
 	min-height: 100%;
 	background-color: var(--bg-color);
 }
+body.lock {
+	overflow: hidden;
+}
 main {
 	display: flex;
 	flex-direction: column;
