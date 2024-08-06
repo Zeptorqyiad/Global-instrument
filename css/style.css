@@ -383,6 +383,10 @@ h6 {
   background: #ea572e;
 }
 
+.tab-content p {
+  display: none;
+}
+
 @media (max-width: 968.98px) {
   .swiper-about {
     max-width: 700px;
@@ -421,7 +425,54 @@ h6 {
     font-weight: 350;
     line-height: 130%;
   }
-  .tab-nav {
+  .tab-content p {
+    display: block;
+    color: var(--white-color);
+    font-family: Stem;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 28px;
+  }
+  #content-1 {
+    padding: 30px 17px 33px 24px;
+    background-position: 50% 92%;
+  }
+  #content-2 {
+    padding: 30px 17px 33px 24px;
+    background-position: 53% 92%;
+  }
+  #content-3 {
+    padding: 30px 17px 33px 24px;
+    background-image: none;
+  }
+  #content-3 p {
+    display: block;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 12px;
+  }
+  #content-4 {
+    padding: 30px 17px 33px 24px;
+    background-position: 50% 92%;
+  }
+  #content-5 {
+    padding: 30px 17px 33px 24px;
+    background-position: 50% 94%;
+  }
+  #content-5 p {
+    display: block;
+    font-size: 20px;
+    line-height: 18px;
+    margin-bottom: 10px;
+  }
+  #content-6 {
+    padding: 30px 17px 33px 24px;
+    background-position: 50% 92%;
+  }
+  .tab-content .tab-nav {
     display: none;
   }
   .swiper-about {
@@ -590,11 +641,6 @@ h6 {
   .services__items {
     display: none;
   }
-  .swiper-examples {
-    display: block;
-    width: 1145px;
-    height: 340px;
-  }
   .swiper-slide .swiper-slide-active {
     width: 288px;
   }
@@ -756,9 +802,22 @@ h6 {
   order: 3;
 }
 
+@media (max-width: 1145.98px) {
+  .swiper-examples {
+    display: block;
+    width: 1145px;
+    height: 340px;
+  }
+}
 @media (max-width: 1062.98px) {
   .examples__items {
     overflow-x: scroll;
+  }
+}
+@media (max-width: 768.98px) {
+  .swiper-examples {
+    width: 688px;
+    height: 340px;
   }
 }
 @media (max-width: 732.98px) {
@@ -790,6 +849,10 @@ h6 {
   }
   .examples {
     margin-bottom: 48px;
+  }
+  .swiper-examples {
+    width: 288px;
+    height: 340px;
   }
 }
 .faq {
@@ -1239,10 +1302,11 @@ details[open] p {
 
 .incisors__grid {
   display: grid;
-  grid-template-columns: repeat(3, 357px);
+  grid-template-columns: repeat(auto-fit, 357px);
   grid-template-rows: repeat(3, 1fr);
-  grid-gap: 50px;
+  grid-gap: 40px;
   margin-bottom: 50px;
+  justify-content: space-around;
 }
 
 .grid-item-image {
@@ -1340,6 +1404,174 @@ details[open] p {
   background-size: cover;
 }
 
+.swiper-incisors {
+  display: none;
+}
+
+@media (max-width: 940.98px) {
+  .incisors__wrapper h2 {
+    font-size: 38px;
+    line-height: 28px;
+    margin-bottom: 42px;
+  }
+}
+@media (max-width: 932.98px) {
+  .incisors {
+    margin: 126px 0 54px 0;
+  }
+}
+@media (max-width: 784.98px) {
+  .grid-item-image {
+    width: 288px;
+    height: 192px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-bottom: 28px;
+    background-color: var(--white-color);
+  }
+  .incisors__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 288px);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin-bottom: 50px;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 645.98px) {
+  .incisors__wrapper h2 {
+    font-size: 38px;
+    line-height: 28px;
+    margin-bottom: 24px;
+  }
+  .incisors__grid {
+    display: none;
+  }
+  .swiper-incisors {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .incisors-slide {
+    width: 288px;
+    height: 456px;
+    padding: 30px 24px 20px 24px;
+  }
+  .grid-item-image {
+    width: 210px;
+    height: 282px;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 28px;
+    background-color: transparent;
+    background-image: none;
+    margin: 0 auto;
+    margin-bottom: 14px;
+  }
+  .incisors-btn {
+    display: inline-block;
+    background-color: var(--orange-color);
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+    padding: 12px 0;
+    color: var(--white-color);
+    font-family: Stem;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  .incisors-slide-image-1 {
+    background-image: url("../../assets/image/Incisors/M6 (1522021) 2-01 2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  .incisors-slide-image-2 {
+    background-image: url("../../assets/image/Incisors/02.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  .incisors-slide-image-3 {
+    background-image: url("../../assets/image/Incisors/03.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  .incisors-slide-image-4 {
+    background-image: url("../../assets/image/Incisors/04.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  .incisors-slide-image-5 {
+    background-image: url("../../assets/image/Incisors/05.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  .incisors-slide-image-6 {
+    background-image: url("../../assets/image/Incisors/06.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  .incisors-slide-image-7 {
+    background-image: url("../../assets/image/Incisors/07.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  .incisors-slide-image-8 {
+    background-image: url("../../assets/image/Incisors/08.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  .incisors-slide-image-9 {
+    background-image: url("../../assets/image/Incisors/09.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  .grid-item-title {
+    display: flex;
+    justify-content: space-between;
+  }
+  .grid-item-title span {
+    color: rgb(0, 0, 0);
+    font-family: Stem;
+    font-size: 14px;
+    font-weight: 350;
+    line-height: 130%;
+  }
+  .grid-item-subtitle {
+    color: rgb(0, 0, 0);
+    font-family: Stem;
+    font-size: 14px;
+    font-weight: 350;
+    line-height: 130%;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 498.98px) {
+  .incisors-btn-prev {
+    display: none;
+  }
+}
+@media (max-width: 479.98px) {
+  .incisors {
+    margin: 75px 0 0 0;
+  }
+  .incisors__wrapper h2 {
+    font-family: Stem;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+    margin-bottom: 24px;
+  }
+}
 .popup {
   position: fixed;
   width: 100%;
@@ -2026,6 +2258,10 @@ body {
   display: none;
 }
 
+.header__block-tel {
+  display: none;
+}
+
 @media (max-width: 1069.98px) {
   .menu__link {
     font-size: 20px;
@@ -2075,13 +2311,12 @@ body {
     flex-direction: column;
     gap: 20px;
     position: absolute;
-    width: 300px;
-    height: 450px;
+    width: 350px;
+    height: 400px;
     border-radius: 10px;
-    border: 1vw solid var(--orange-color);
     top: 120px;
     right: 0px;
-    padding: 15px;
+    padding: 25px;
     transform: translate(0px, 0px);
     background-color: var(--white-color);
     margin-right: 10px;
@@ -2089,11 +2324,12 @@ body {
     transform: translate(120%, 0);
   }
   .icon-menu a span {
-    color: #000;
+    color: rgb(0, 0, 0);
     font-family: Stem;
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 350;
     line-height: 130%;
+    letter-spacing: 0%;
     text-align: left;
   }
   .header__min-btn {
@@ -2139,6 +2375,21 @@ body {
     background-color: #000;
     transition: transform 0.5s ease 0s;
   }
+  .header__block-tel {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-top: 5px;
+  }
+  .header__block-tel a {
+    color: var(--dark-main-text);
+    font-family: Stem;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: right;
+  }
 }
 @media (max-width: 479.98px) {
   .menu__icon {
@@ -2153,6 +2404,11 @@ body {
   }
   .header__content-top {
     height: 56px;
+  }
+}
+@media (max-width: 374.98px) {
+  .menu__icon {
+    width: 300px;
   }
 }
 :root {
