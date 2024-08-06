@@ -392,6 +392,7 @@ h6 {
     max-width: 700px;
     height: 400px;
     padding: 0;
+    margin-bottom: 10px;
   }
   .about {
     margin: 48px 0 48px 0;
@@ -405,8 +406,14 @@ h6 {
     padding: 0;
   }
   .about__title {
+    margin-top: 0;
     margin-bottom: 35px;
     order: 2;
+    color: var(--dark-main-text);
+    font-family: Stem;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
   }
   .about__text {
     order: 3;
@@ -1451,9 +1458,21 @@ details[open] p {
     display: block;
     margin-bottom: 20px;
   }
+  .incisors-wrapper {
+    position: relative;
+    width: 100%;
+    height: 510px;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+    box-sizing: content-box;
+  }
   .incisors-slide {
+    background-color: var(--white-color);
+    border-radius: 10px;
     width: 288px;
-    height: 456px;
+    height: 470px;
     padding: 30px 24px 20px 24px;
   }
   .grid-item-image {
@@ -1552,6 +1571,7 @@ details[open] p {
     font-weight: 350;
     line-height: 130%;
     margin-bottom: 0;
+    width: 220px;
   }
 }
 @media (max-width: 498.98px) {
@@ -2111,7 +2131,7 @@ textarea::placeholder {
   background-color: var(--bg-color);
 }
 
-body.lock {
+body._lock {
   overflow: hidden;
 }
 
