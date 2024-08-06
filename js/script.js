@@ -6,6 +6,7 @@ burgerIcon.addEventListener('click', () => {
    if (burgerIcon) {
       burgerIcon.classList.toggle('active')
       burgerList.classList.toggle('active')
+      document.body.classList.toggle('_lock')
    }
 })
 
@@ -166,3 +167,11 @@ document.addEventListener('DOMContentLoaded', function () {
       return !/^\w+[-_\.]*\w+@\w+-?\w+\.[a-z]{2,4}$/.test(input.value)
    }
 })
+
+window.addEventListener('promo', offsetAnchor)
+window.setTimeout(offsetAnchor, 1)
+function offsetAnchor() {
+   if (location.hash.length !== 0) {
+      window.scrollTo(window.scrollX, window.scrollY - 50)
+   }
+}

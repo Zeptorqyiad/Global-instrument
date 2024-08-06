@@ -1,0 +1,261 @@
+@import "../components/ui";
+
+.footer {
+	height: 480px;
+	background-color: #003350;
+	padding: 65px 0 70px 0;
+}
+.footer__content {
+	display: flex;
+	height: 360px;
+}
+.footer__image-links {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-right: 30px;
+}
+.footer__image-links img {
+	width: 100px;
+	height: 100px;
+}
+.footer-links img {
+	width: 36px;
+	height: 36px;
+}
+.footer-links {
+	display: flex;
+	gap: 15px;
+}
+.footer__column-2 a li,
+.footer__column-1 a li {
+	color: var(--white-color);
+	font-family: $ff1;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+	text-align: left;
+}
+.footer__column-1 {
+	margin-right: 44px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+.footer__column-2 {
+	margin-right: 220px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+.footer__contacts {
+	display: flex;
+	flex-direction: column;
+	gap: 61px;
+}
+.footer__contacts div h6 {
+	color: var(--white-color);
+	font-family: $ff1;
+	font-size: 18px;
+	font-weight: 350;
+	line-height: 24px;
+	text-align: left;
+}
+.footer__tel {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.footer__tel a {
+	color: var(--white-color);
+	font-family: $ff1;
+	font-size: 20px;
+	font-weight: 400;
+	text-align: left;
+}
+.footer__adress {
+	display: flex;
+	flex-direction: column;
+	gap: 22px;
+}
+.footer__time p,
+.footer__adress p {
+	color: var(--white-color);
+	font-family: $ff1;
+	font-size: 20px;
+	font-weight: 400;
+	text-align: left;
+}
+.footer__time {
+	display: flex;
+	flex-direction: column;
+	gap: 22px;
+}
+.footer-links-min {
+	display: none;
+}
+
+//===============================================================================
+@media (max-width: 975.98px) {
+	.footer {
+		height: 480px;
+		background-color: #003350;
+		padding: 65px 0 70px 0;
+	}
+	.footer__content {
+		display: flex;
+		height: 360px;
+	}
+	.footer__image-links {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		margin-right: 30px;
+	}
+	.footer__column-1 {
+		margin-right: 44px;
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+	}
+	.footer__column-2 {
+		margin-right: 60px;
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+	}
+	.footer__image-links img {
+		width: 100px;
+		height: 100px;
+	}
+	.footer-links img {
+		width: 36px;
+		height: 36px;
+	}
+	.footer-links {
+		display: flex;
+		gap: 15px;
+	}
+	.footer__time {
+		display: flex;
+		flex-direction: column;
+		gap: 22px;
+	}
+}
+@media (max-width: 875.98px) {
+	.footer__content {
+		flex-wrap: wrap;
+	}
+	.footer__image-links {
+		img {
+			display: block;
+		}
+		order: 1;
+	}
+	.footer-links-min {
+		display: block;
+		order: 3;
+	}
+	.footer__column-1 {
+		order: 2;
+	}
+	.footer__column-2 {
+		order: 4;
+	}
+	.footer__contacts {
+		order: 5;
+	}
+}
+@media (max-width: 479.98px) {
+	.footer {
+		height: 288px;
+		padding: 20px 0 29px 0;
+	}
+	.footer__content {
+		flex-wrap: nowrap;
+		justify-content: space-between;
+	}
+	.footer__image-links {
+		order: 5;
+		width: 0;
+		opacity: 0;
+		visibility: hidden;
+		height: 0;
+	}
+	.footer-links-min {
+		width: 60px;
+		gap: 10px;
+		order: 3;
+	}
+	.footer-links-min a img {
+		margin-bottom: 10px;
+		flex-wrap: wrap-reverse;
+	}
+	.footer__column-1 {
+		display: none;
+	}
+	.footer__column-2 {
+		display: none;
+	}
+	.footer__contacts {
+		order: 1;
+		gap: 21px;
+		div h6 {
+			color: var(--white-color);
+			font-family: $ff1;
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 130%;
+			text-align: left;
+		}
+		div a {
+			color: var(--white-color);
+			font-family: $ff2;
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 160%;
+			text-align: left;
+		}
+	}
+	.footer__time,
+	.footer__adress,
+	.footer__tel {
+		gap: 4px;
+	}
+	.footer__adress {
+		h6 {
+			font-family: $ff1;
+			font-size: 12px;
+			font-weight: 350;
+			line-height: 24px;
+			text-align: left;
+		}
+		p {
+			font-family: $ff1;
+			font-size: 12px;
+			font-weight: 500;
+			line-height: 130%;
+			text-align: left;
+		}
+	}
+	.footer__time {
+		h6 {
+			font-family: $ff1;
+			font-size: 12px;
+			font-weight: 350;
+			line-height: 24px;
+			text-align: left;
+		}
+		p {
+			font-family: $ff1;
+			font-size: 12px;
+			font-weight: 500;
+			line-height: 130%;
+			text-align: left;
+		}
+	}
+	.footer-links-min a img {
+		width: 24px;
+		height: 24px;
+	}
+}
