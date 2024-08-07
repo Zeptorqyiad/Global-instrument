@@ -17,12 +17,6 @@
   font-weight: 700;
   font-style: normal;
 }
-@font-face {
-  font-family: "Gotham";
-  src: url("../../assets/fonts/Gothampro_bold.ttf");
-  font-weight: 700;
-  font-style: normal;
-}
 /*Обнуление*/
 * {
   padding: 0;
@@ -1415,6 +1409,18 @@ details[open] p {
   display: none;
 }
 
+.incisors-button {
+  padding: 12px 26px;
+  border-radius: 10px;
+  background-color: var(--orange-color);
+  color: white;
+  font-family: Stem;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  box-sizing: border-box;
+}
+
 @media (max-width: 940.98px) {
   .incisors__wrapper h2 {
     font-size: 38px;
@@ -2041,6 +2047,7 @@ textarea::placeholder {
     order: 5;
     width: 0;
     opacity: 0;
+    display: none;
     visibility: hidden;
     height: 0;
   }

@@ -1232,6 +1232,17 @@ details[open] {
 .swiper-incisors {
 	display: none;
 }
+.incisors-button {
+	padding: 12px 26px;
+	border-radius: 10px;
+	background-color: var(--orange-color);
+	color: white;
+	font-family: $ff1;
+	font-size: 18px;
+	font-weight: 500;
+	border: none;
+	box-sizing: border-box;
+}
 
 //=======================================================================
 @media (max-width: 940.98px) {
