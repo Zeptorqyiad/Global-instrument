@@ -63,3 +63,12 @@ let swiperIncisors = new Swiper('.swiper-incisors', {
       },
    },
 })
+
+let swiperPopup = new Swiper('.swiper-popup', {
+   loop: true,
+   slidesPerView: 1,
+   spaceBetween: 0,
+   pagination: {
+      el: '.popup-pagination',
+   },
+})

@@ -877,6 +877,63 @@ details[open] {
 
 //=======================================================================
 
+@media (max-width: 1144.98px) {
+	iframe {
+		width: 612px;
+	}
+}
+@media (max-width: 932.98px) {
+	.contact-section {
+		margin: 140px 0 40px 0;
+	}
+	iframe {
+		width: 512px;
+	}
+}
+@media (max-width: 826.98px) {
+	iframe {
+		width: 412px;
+	}
+	.contact-section__content-ls {
+		h2 {
+			color: rgb(0, 0, 0);
+			font-family: $ff1;
+			font-size: 26px;
+			font-weight: 500;
+			line-height: 25px;
+			margin-bottom: 24px;
+		}
+		p {
+			color: rgb(0, 0, 0);
+			font-family: $ff1;
+			font-size: 18px;
+			font-weight: 350;
+			line-height: 130%;
+		}
+	}
+}
+@media (max-width: 642.98px) {
+	iframe {
+		width: 288px;
+		height: 379px;
+	}
+	.btn-prev {
+		display: none;
+	}
+}
+@media (max-width: 524.98px) {
+	.contact-section__content {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+}
+@media (max-width: 479.98px) {
+	.contact-section {
+		margin: 72px 0 40px 0;
+	}
+}
+
 //===============================Repair Page========================================
 
 .production {
@@ -923,10 +980,6 @@ details[open] {
 	margin-bottom: 32px;
 }
 
-//=======================================================================
-
-//=======================================================================
-
 .repair-for {
 	margin-bottom: 80px;
 }
@@ -971,8 +1024,160 @@ details[open] {
 	margin-bottom: 32px;
 	background-color: #fff;
 }
+.title-min-repair {
+	display: none;
+}
+.swiper-repair-1 {
+	display: none;
+}
+
 //=======================================================================
+@media (max-width: 1126.98px) {
+	.construction__items {
+		margin-top: 20px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 40px;
+	}
+}
+@media (max-width: 1032.98px) {
+	.production__banner img {
+		margin-right: 49px;
+		max-height: 564px;
+	}
+}
+@media (max-width: 932.98px) {
+	.production__banner img {
+		max-width: 380px;
+		margin-right: 39px;
+	}
+	.production {
+		margin: 127px 0 40px 0;
+	}
+	.construction__content h2,
+	.production__wrapper h2 {
+		color: rgb(0, 0, 0);
+		font-family: $ff1;
+		font-size: 28px;
+		font-weight: 500;
+		line-height: 25px;
+	}
+	.construction__content h2 {
+		margin-bottom: 24px;
+	}
+}
+@media (max-width: 814.98px) {
+	.production__wrapper {
+		display: none;
+	}
+	.orange-text {
+		color: rgb(224, 73, 38);
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 130%;
+	}
+	.production__banner {
+		display: flex;
+		flex-direction: column;
+		img {
+			margin-right: 0;
+		}
+	}
+	.title-min-repair {
+		display: block;
+		margin: 24px 0;
+		color: rgb(0, 0, 0);
+		font-family: $ff1;
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 25px;
+	}
+}
+@media (max-width: 645.98px) {
+	.construction__items {
+		display: none;
+	}
+	.swiper-repair-1 {
+		margin-top: 24px;
+		display: block;
+	}
+	.details-image-1 {
+		background-image: url("../../assets/image/repairPage/M303-20 1.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 300px;
+	}
+	.details-image-2 {
+		background-image: url("../../assets/image/repairPage/M301-303.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: auto;
+		height: 300px;
+	}
+	.details-image-3 {
+		background-image: url("../../assets/image/repairPage/M303-22 1.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: auto;
+		height: 300px;
+	}
+	.details-image-4 {
+		background-image: url("../../assets/image/repairPage/M302L 1.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 300px;
+	}
+	.details-image-5 {
+		background-image: url("../../assets/image/repairPage/M301-303.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: auto;
+		height: 300px;
+	}
+	.details-image-6 {
+		background-image: url("../../assets/image/repairPage/M302R 1.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: auto;
+		height: 300px;
+	}
+}
+@media (max-width: 479.98px) {
+	.production {
+		margin: 72px 0 40px 0;
+	}
+	.construction__content h2 {
+		color: rgb(0, 0, 0);
+		font-family: $ff1;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 25px;
+	}
+	.orange-text {
+		color: rgb(224, 73, 38);
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 130%;
+		margin-bottom: 24px;
+	}
+	.production__blocktext p {
+		color: rgb(0, 0, 0);
+		font-family: $ff1;
+		font-size: 14px;
+		font-weight: 350;
+		line-height: 130%;
+		text-align: left;
+	}
+	.production__blocktext p:not(:last-child) {
+		margin-bottom: 20px;
+	}
+}
+@media (max-width: 424.98px) {
+}
 //=======================================================================
+
 .details-image-1,
 .details-image-2,
 .details-image-3 {
@@ -988,6 +1193,10 @@ details[open] {
 }
 .details-image-3 {
 	background-image: url("../../assets/image/repairPage/M303-22 1.png");
+}
+
+.bar-image {
+	width: 100%;
 }
 .construction__btn {
 	box-sizing: border-box;
@@ -1069,7 +1278,55 @@ details[open] {
 }
 
 //=======================================================================
-
+@media (max-width: 1095px) {
+	.markup-block {
+		display: none;
+	}
+	.construction__zone-choose {
+		line-height: 130%;
+	}
+}
+@media (max-width: 470px) {
+	.markup-block {
+		display: flex;
+	}
+	.vert-line {
+		height: 20px;
+	}
+	.construction__block-image {
+		margin-top: 24px;
+	}
+	.short-line {
+		max-width: 48px;
+	}
+	.large-line {
+		max-width: 113px;
+	}
+	.short-line ~ p {
+		position: absolute;
+		width: 0;
+		top: 0px;
+		left: -33px;
+	}
+	.short-line ~ span {
+		position: absolute;
+		width: 0;
+		top: 0px;
+		left: -66px;
+	}
+	.construction__zone-choose {
+		color: rgb(0, 0, 0);
+		font-family: $ff1;
+		font-size: 14px;
+		font-weight: 350;
+		line-height: 130%;
+		text-align: left;
+		margin-bottom: 12px;
+	}
+	.construction {
+		margin-bottom: 24px;
+	}
+}
 //=======================================================================
 
 .system-image-1 {
@@ -1095,9 +1352,10 @@ details[open] {
 	margin-top: 40px;
 	margin-bottom: 50px;
 	display: grid;
-	grid-template-columns: repeat(3, 357px);
+	grid-template-columns: repeat(auto-fit, 357px);
 	grid-template-rows: repeat(2, 1fr);
 	grid-gap: 40px;
+	justify-content: space-around;
 }
 .grid-item {
 	img {
@@ -1119,7 +1377,68 @@ details[open] {
 }
 
 //=======================================================================
-//=======================================================================
+@media (max-width: 450px) {
+	.repair-for {
+		margin-bottom: 24px;
+	}
+	.grid-item-title {
+		font-size: 28px;
+		font-weight: 500;
+		line-height: 24px;
+	}
+	.repair__grid {
+		display: none;
+	}
+	.details-image-grid-1 {
+		background-image: url("../../assets/image/repairPage/01.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: 321px;
+		margin-bottom: 12px;
+	}
+	.details-image-grid-2 {
+		background-image: url("../../assets/image/repairPage/02.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: 321px;
+		margin-bottom: 12px;
+	}
+	.details-image-grid-3 {
+		background-image: url("../../assets/image/repairPage/03.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: 321px;
+		margin-bottom: 12px;
+	}
+	.details-image-grid-4 {
+		background-image: url("../../assets/image/repairPage/04.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: 321px;
+		margin-bottom: 12px;
+	}
+	.details-image-grid-5 {
+		background-image: url("../../assets/image/repairPage/05.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: 321px;
+		margin-bottom: 12px;
+	}
+	.details-image-grid-6 {
+		background-image: url("../../assets/image/repairPage/06.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: 321px;
+		margin-bottom: 12px;
+	}
+}
+//=================================Incisors page=========================
 .incisors {
 	margin: 244px 0 74px 0;
 }
@@ -1428,6 +1747,7 @@ details[open] {
 	width: 100%;
 	height: 100%;
 	background-color: #00000085;
+	z-index: 9999;
 	top: 0;
 	left: 0;
 	opacity: 0;
@@ -1449,13 +1769,91 @@ details[open] {
 	transform: translate(0px, 0px);
 	opacity: 1;
 }
+.popup.open .item-popup-content {
+	transform: translate(0px, 80px);
+	opacity: 1;
+}
 .popup__content {
 	position: relative;
+	z-index: 9999;
 	padding: 62px 50px 55px 50px;
 	background-color: var(--white-color);
 	color: #000;
 	max-width: 569px;
 	border-radius: 4px;
+	transition: all 0.8s ease 0s;
+	opacity: 0;
+	transform: translate(0px, -100%);
+}
+
+.item-popup-banner img {
+	width: 848px;
+	height: 560px;
+}
+.item-popup-banner {
+	display: flex;
+	gap: 80px;
+}
+.item-popup-wrapper {
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.item-wrapper-title {
+	color: rgb(0, 0, 0);
+	font-family: $ff1;
+	font-size: 48px;
+	font-weight: 500;
+	line-height: 20px;
+	text-align: left;
+	margin-right: 22px;
+	span {
+		color: rgb(0, 0, 0);
+		font-family: $ff1;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 130%;
+		text-align: left;
+	}
+}
+.item-popup-blocktext {
+	margin: 40px 0;
+	max-width: 207px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 200px;
+	span {
+		display: inline-block;
+		width: 207px;
+		color: rgb(0, 0, 0);
+		font-family: $ff1;
+		font-size: 20px;
+		font-weight: 350;
+		line-height: 130%;
+		letter-spacing: 0%;
+		text-align: left;
+	}
+}
+.item-popup-btn {
+	display: inline-block;
+	width: 100%;
+	padding: 12px 26px;
+	background-color: var(--orange-color);
+	border-radius: 10px;
+	color: white;
+	font-family: $ff1;
+	font-size: 20px;
+	font-weight: 350;
+	line-height: 130%;
+	text-align: center;
+}
+.item-popup-content {
+	background-color: var(--white-color);
+	position: relative;
+	max-width: 1200px;
+	height: 700px;
 	transition: all 0.8s ease 0s;
 	opacity: 0;
 	transform: translate(0px, -100%);
@@ -1535,6 +1933,48 @@ input {
 	display: flex;
 	flex-wrap: wrap;
 }
+//=======================================================================
+@media (max-width: 590.98px) {
+	.form {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		max-width: 260px;
+	}
+	.popup__content {
+		z-index: 9999;
+		padding: 20px;
+		max-width: 300px;
+	}
+	.popup-min-content {
+		padding: 20px 10px 20px 10px;
+	}
+	textarea {
+		padding: 11px 16px;
+		border-radius: 10px;
+		box-sizing: border-box;
+		resize: vertical;
+		border: 1px solid rgb(224, 73, 38);
+		border-radius: 10px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.popup-pagination {
+		display: block;
+	}
+	.popup-slide {
+		min-width: 250px;
+	}
+	.popup__close {
+		position: absolute;
+		z-index: 9999;
+	}
+	input {
+		width: 260px;
+		padding: 11px 16px;
+	}
+}
+//=======================================================================
 textarea {
 	padding: 11px 16px;
 	border-radius: 10px;
@@ -1571,6 +2011,7 @@ textarea {
 }
 
 //=======================================================================
+
 //=======================================================================
 
 .reserve {
