@@ -642,6 +642,14 @@ h6 {
   .services__items {
     display: none;
   }
+  .swiper-slide {
+    position: relative;
+  }
+  .slider-pattern-2 {
+    position: absolute;
+    bottom: 82px;
+    right: 9px;
+  }
   .swiper-slide .swiper-slide-active {
     width: 288px;
   }
@@ -780,10 +788,15 @@ h6 {
 }
 
 .examples__item {
+  position: relative;
   max-width: 215px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.pattern {
+  position: absolute;
 }
 
 .examples__item p {
@@ -1164,10 +1177,12 @@ details[open] p {
 }
 
 .construction__item {
+  position: relative;
   max-width: 357px;
 }
 
 .construction__image-details {
+  position: relative;
   width: 357px;
   height: 236px;
   box-sizing: border-box;
@@ -1176,6 +1191,14 @@ details[open] p {
   background: rgba(217, 217, 217, 0);
   margin-bottom: 32px;
   background-color: #fff;
+}
+
+.pattern-2 {
+  position: absolute;
+  top: 60px;
+  right: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .title-min-repair {
@@ -2518,15 +2541,15 @@ textarea::placeholder {
   .footer__contacts div h6 {
     color: var(--white-color);
     font-family: Stem;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 130%;
     text-align: left;
   }
   .footer__contacts div a {
     color: var(--white-color);
-    font-family: Gotham;
-    font-size: 12px;
+    font-family: Stem;
+    font-size: 14px;
     font-weight: 400;
     line-height: 160%;
     text-align: left;
@@ -2538,28 +2561,28 @@ textarea::placeholder {
   }
   .footer__adress h6 {
     font-family: Stem;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 350;
     line-height: 24px;
     text-align: left;
   }
   .footer__adress p {
     font-family: Stem;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 130%;
     text-align: left;
   }
   .footer__time h6 {
     font-family: Stem;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 350;
     line-height: 24px;
     text-align: left;
   }
   .footer__time p {
     font-family: Stem;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 130%;
     text-align: left;
