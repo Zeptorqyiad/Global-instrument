@@ -987,6 +987,24 @@ details[open] p {
     text-align: left;
     margin-bottom: 24px;
   }
+  summary {
+    padding: 20px;
+    color: var(--dark-main-text);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 130%;
+    text-align: left;
+    cursor: pointer;
+  }
+  details p {
+    padding: 0 20px 20px 20px;
+    color: var(--white-color);
+    font-family: Stem;
+    font-size: 14px;
+    font-weight: 350;
+    line-height: 130%;
+    text-align: left;
+  }
 }
 .contact-section {
   margin: 250px 0 126px 0;
@@ -1071,7 +1089,7 @@ details[open] p {
 }
 @media (max-width: 642.98px) {
   iframe {
-    width: 288px;
+    width: 100%;
     height: 379px;
   }
   .btn-prev {
@@ -1207,6 +1225,46 @@ details[open] p {
 
 .swiper-repair-1 {
   display: none;
+}
+
+.repair-btn {
+  display: inline-block;
+  margin-top: 24px;
+  background-color: #ea572e;
+  padding: 10px 56px;
+  border-radius: 10px;
+  border: none;
+  color: var(--white-color);
+  font-family: Stem;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  transition: all 0.3s ease 0s;
+}
+
+.repair-btn-list {
+  display: inline-block;
+  background-color: #ea572e;
+  padding: 10px 56px;
+  border-radius: 10px;
+  border: none;
+  color: var(--white-color);
+  font-family: Stem;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.repair-btn:hover,
+.repair-btn-list:hover {
+  background-color: #000;
+  color: var(--white-color);
+}
+
+.repair-btn:active:focus,
+.repair-btn-list:active:hover {
+  background-color: #000;
+  color: var(--white-color);
 }
 
 @media (max-width: 1126.98px) {
@@ -1397,7 +1455,6 @@ details[open] p {
   font-weight: 350;
   line-height: 130%;
   text-align: left;
-  margin-bottom: 14px;
 }
 
 .construction__block-image {
@@ -1690,7 +1747,6 @@ details[open] p {
   font-weight: 350;
   line-height: 130%;
   text-align: left;
-  margin-bottom: 14px;
 }
 
 .incisors-image-1 {
@@ -2432,7 +2488,7 @@ textarea::placeholder {
   display: none;
 }
 
-@media (max-width: 975.98px) {
+@media (max-width: 1104.98px) {
   .footer {
     height: 480px;
     background-color: #003350;
@@ -2441,12 +2497,13 @@ textarea::placeholder {
   .footer__content {
     display: flex;
     height: 360px;
+    justify-content: center;
   }
   .footer__image-links {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-right: 30px;
+    margin-right: 0;
   }
   .footer__column-1 {
     margin-right: 44px;
@@ -2471,6 +2528,7 @@ textarea::placeholder {
   .footer-links {
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
   }
   .footer__time {
     display: flex;
@@ -2478,7 +2536,7 @@ textarea::placeholder {
     gap: 22px;
   }
 }
-@media (max-width: 875.98px) {
+@media (max-width: 600.98px) {
   .footer__content {
     flex-wrap: wrap;
   }
@@ -2501,8 +2559,6 @@ textarea::placeholder {
   .footer__contacts {
     order: 5;
   }
-}
-@media (max-width: 479.98px) {
   .footer {
     height: 288px;
     padding: 20px 0 29px 0;
@@ -2807,7 +2863,7 @@ body {
     gap: 20px;
     position: absolute;
     width: 350px;
-    height: 400px;
+    height: 340px;
     border-radius: 10px;
     top: 120px;
     right: 0px;
