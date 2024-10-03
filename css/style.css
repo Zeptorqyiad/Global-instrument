@@ -921,6 +921,7 @@ summary {
   line-height: 130%;
   text-align: left;
   cursor: pointer;
+  max-width: 90%;
 }
 
 details p {
@@ -972,6 +973,9 @@ details[open] p {
 @media (max-width: 767.98px) {
   details {
     background-image: none;
+  }
+  summary {
+    max-width: 100%;
   }
 }
 @media (max-width: 425px) {
@@ -2863,7 +2867,7 @@ body {
     gap: 20px;
     position: absolute;
     width: 350px;
-    height: 340px;
+    height: 370px;
     border-radius: 10px;
     top: 120px;
     right: 0px;

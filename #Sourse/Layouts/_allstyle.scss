@@ -778,6 +778,7 @@ summary {
 	line-height: 130%;
 	text-align: left;
 	cursor: pointer;
+	max-width: 90%;
 }
 details p {
 	padding: 0 40px 40px 40px;
@@ -824,6 +825,9 @@ details[open] {
 @media (max-width: 767.98px) {
 	details {
 		background-image: none;
+	}
+	summary {
+		max-width: 100%;
 	}
 }
 @media (max-width: 425px) {
