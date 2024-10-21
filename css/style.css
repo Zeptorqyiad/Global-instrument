@@ -2520,6 +2520,68 @@ textarea::placeholder {
   text-align: center;
 }
 
+.reserve-page {
+  margin: 244px 0 80px 0;
+}
+
+.reserve-page__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.reserve-page__wrapper h2 {
+  color: rgb(0, 0, 0);
+  font-family: Stem;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 48px;
+  text-align: left;
+}
+
+.reserve-page-subtitle {
+  color: rgb(224, 73, 38);
+  font-family: Stem;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 60px;
+}
+
+.image-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 44px;
+  margin-top: 40px;
+}
+
+.image-block-reserve {
+  position: relative;
+}
+.image-block-reserve::after {
+  content: "";
+  background-image: url("../../assets/image/main/LogoWater.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+}
+
+.reserve-page__image-block {
+  gap: 40px;
+}
+
+.border-image-reserve {
+  border: 1px solid black;
+  box-sizing: content-box;
+  border-radius: 5px;
+}
+
 :root {
   --bg-color: #f7f8f8;
   --dark-main-text: #1d1d1d;
