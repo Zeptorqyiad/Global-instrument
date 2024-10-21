@@ -26,14 +26,14 @@
 					</div>
 					<div class="header__menu menu">
 						<div class="menu__icon icon-menu">
-							<a href="#about"><span>О компании</span></a>
-							<a href="#services"><span>Услуги</span></a>
-							<a href="#promo"><span>Акции</span></a>
-							<a href="#examples"><span>Примеры работ</span></a>
-							<a href="/contacts.html"><span>Контакты</span></a>
-							<a href="/repair.html"><span>Ремонт барабанов</span></a>
-							<a href="/incisors.html"><span>Дорожные резцы</span></a>
-							<a href="/reserve.html"><span>Запасные части</span></a>
+							<a href="#about" class="burger__link-min"><span>О компании</span></a>
+							<a href="#services" class="burger__link-min"><span>Услуги</span></a>
+							<a href="#promo" class="burger__link-min"><span>Акции</span></a>
+							<a href="#examples" class="burger__link-min"><span>Примеры работ</span></a>
+							<a href="/contacts.html" class="burger__link-min"><span>Контакты</span></a>
+							<a href="/repair.html" class="burger__link-min"><span>Ремонт барабанов</span></a>
+							<a href="/incisors.html" class="burger__link-min"><span>Дорожные резцы</span></a>
+							<a href="/reserve.html" class="burger__link-min"><span>Запасные части</span></a>
 						</div>
 						<nav class="menu__body">
 							<ul class="menu__list">
@@ -76,7 +76,7 @@
 							<br>БАЛАНСИРОВКА.
 							<br>МЕТАЛЛООБРАБОТКА.
 						</h1>
-						<a href="./folder-html/repair.html" class="header__btn-application">Узнать подробнее</a>
+						<a href="/repair.html" class="header__btn-application">Узнать подробнее</a>
 						<a href="#popup-2"
 							class="min__addaptive-btn header__btn-application callback__btn popup-link">Заказать
 							звонок</a>
@@ -351,29 +351,38 @@
 						</p>
 						<div class="examples__items">
 							<div class="examples__item">
-								<img src="./assets/image/main/example1.png" alt="">
-								<img class="pattern" src="./assets/image/main/Pattern.png" alt="Pattern Image">
+								<picture class="examples__image">
+									<source media="(max-width: 480px)" srcset="./assets/image/main/example1-min.png" />
+									<img src="./assets/image/main/example1.png" alt="" />
+								</picture>
 								<p>Ремонт фрезерных барабанов</p>
 							</div>
 							<div class="examples__item">
-								<img src="./assets/image/main/example2.png" alt="">
-								<img class="pattern" src="./assets/image/main/Pattern.png" alt="Pattern Image">
+								<picture class="examples__image">
+									<source media="(max-width: 480px)" srcset="./assets/image/main/example2-min.png" />
+									<img src="./assets/image/main/example2.png" alt="">
+								</picture>
 								<p>Токарная обработка</p>
 							</div>
 							<div class="examples__item">
-								<img src="./assets/image/main/example3.png" alt="">
-								<img class="pattern" src="./assets/image/main/Pattern.png" alt="Pattern Image">
+								<picture class="examples__image">
+									<source media="(max-width: 480px)" srcset="./assets/image/main/example3-min.png" />
+									<img src="./assets/image/main/example3.png" alt="">
+								</picture>
 								<p>Газовая резка и сварка</p>
 							</div>
 							<div class="examples__item">
-								<img src="./assets/image/main/example4.png" alt="">
-								<img class="pattern" src="./assets/image/main/Pattern.png" alt="">
-								<img class="pattern" src="./assets/image/main/Pattern.png" alt="Pattern Image">
+								<picture class="examples__image">
+									<source media="(max-width: 480px)" srcset="./assets/image/main/example4-min.png" />
+									<img src="./assets/image/main/example4.png" alt="">
+								</picture>
 								<p>Фрезеровка и резка заготовок</p>
 							</div>
 							<div class="examples__item">
-								<img src="./assets/image/main/example5.png" alt="">
-								<img class="pattern" src="./assets/image/main/Pattern.png" alt="Pattern Image">
+								<picture class="examples__image">
+									<source media="(max-width: 480px)" srcset="./assets/image/main/example5-min.png" />
+									<img src="./assets/image/main/example5.png" alt="">
+								</picture>
 								<p>Балансировка барабанов и роторов</p>
 							</div>
 						</div>

@@ -10,6 +10,23 @@ burgerIcon.addEventListener('click', () => {
    }
 })
 
+let burgerText = document.querySelectorAll('.burger__link-min')
+burgerText.forEach((btn) => btn.addEventListener('click', closeParentBlock))
+
+function closeParentBlock() {
+   burgerIcon.classList.remove('active')
+   burgerList.classList.remove('active')
+   document.body.classList.remove('_lock')
+}
+
+window.addEventListener('resize', function () {
+   if (window.matchMedia('(max-width: 1024px)').matches) {
+      burgerIcon.classList.remove('active')
+      burgerList.classList.remove('active')
+      document.body.classList.remove('_lock')
+   }
+})
+
 // FAQ
 document.querySelectorAll('.faq__container details').forEach((item) => {
    item.addEventListener('toggle', (event) => {

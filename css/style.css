@@ -116,6 +116,7 @@ h6 {
 }
 
 .banner {
+  position: relative;
   margin-top: 180px;
   height: 720px;
   background-image: url("../../assets/image/main/hero.jpeg");
@@ -123,6 +124,18 @@ h6 {
   background-size: 100%;
   background-position: top center;
   padding: 150px 0 222px 0;
+}
+.banner::after {
+  content: "";
+  background-image: url("../../assets/image/main/LogoWater.png");
+  background-repeat: repeat;
+  background-position: center bottom;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  opacity: 0.2;
 }
 
 .banner__content {
@@ -548,6 +561,17 @@ h6 {
   list-style: none;
   text-align: center;
 }
+.services__item::after {
+  content: "";
+  background-image: url("../../assets/image/main/LogoWater.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+}
 
 .services__item h3 {
   padding: 28px 15px 0 15px;
@@ -784,7 +808,7 @@ h6 {
   gap: 22px;
   overflow: hidden;
   overflow-x: hidden;
-  order: 1;
+  order: 3;
 }
 
 .examples__item {
@@ -795,8 +819,16 @@ h6 {
   gap: 20px;
 }
 
-.pattern {
+.examples__image::after {
+  content: "";
+  background-image: url("../../assets/image/main/pattern.png");
+  background-repeat: no-repeat;
+  background-size: contain;
   position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .examples__item p {
@@ -844,6 +876,13 @@ h6 {
   }
   .examples__items {
     overflow-x: scroll;
+  }
+  .examples__image::after {
+    content: "";
+    background-image: url("../../assets/image/main/Pattern-min.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
 }
 @media (max-width: 404.98px) {
@@ -1145,7 +1184,23 @@ details[open] p {
 .production__banner {
   display: flex;
 }
-.production__banner img {
+
+.production__banner-image {
+  position: relative;
+}
+.production__banner-image::after {
+  content: "";
+  background-image: url("../../assets/image/main/Pattern-min.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+}
+.production__banner-image img {
   margin-right: 79px;
 }
 
@@ -1162,6 +1217,93 @@ details[open] p {
   margin-bottom: 32px;
 }
 
+.orange-wrapper {
+  position: relative;
+  background: #e04926;
+  padding: 60px 0;
+  margin-bottom: 80px;
+}
+
+.orange-wrapper__items {
+  display: flex;
+  gap: 48px;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.orange-wrapper__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.orange-wrapper__item img {
+  width: 357px;
+  height: 274px;
+}
+.orange-wrapper__item span {
+  color: rgb(255, 255, 255);
+  font-family: Stem;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 130%;
+  text-align: left;
+}
+.orange-wrapper__item::after {
+  content: "";
+  background-image: url("../../assets/image/main/LogoWater.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: auto;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -20px;
+  right: 0;
+}
+
+@media (max-width: 1200px) {
+  .orange-wrapper__items {
+    display: flex;
+    gap: 48px;
+    overflow-x: scroll;
+  }
+}
+@media (max-width: 425px) {
+  .orange-wrapper {
+    position: relative;
+    padding: 24px 0 48px 0;
+    margin-bottom: 48px;
+  }
+  .orange-wrapper__item {
+    position: relative;
+    gap: 24px;
+  }
+  .orange-wrapper__item img {
+    width: 288px;
+    height: 274px;
+  }
+  .orange-wrapper__item span {
+    color: rgb(255, 255, 255);
+    font-family: Stem;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 130%;
+    text-align: left;
+  }
+  .orange-wrapper__item::after {
+    content: "";
+    background-image: url("../../assets/image/main/LogoWater.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -10px;
+    right: 0;
+  }
+}
 .repair-for {
   margin-bottom: 80px;
 }
@@ -1280,13 +1422,13 @@ details[open] p {
   }
 }
 @media (max-width: 1032.98px) {
-  .production__banner img {
+  .production__banner-image img {
     margin-right: 49px;
     max-height: 564px;
   }
 }
 @media (max-width: 932.98px) {
-  .production__banner img {
+  .production__banner-image img {
     max-width: 380px;
     margin-right: 39px;
   }
@@ -1319,8 +1461,14 @@ details[open] p {
     display: flex;
     flex-direction: column;
   }
-  .production__banner img {
+  .production__banner-image {
+    display: inline-flex;
+    flex: 0 0 100%;
+    width: 100%;
+  }
+  .production__banner-image img {
     margin-right: 0;
+    width: 100%;
   }
   .title-min-repair {
     display: block;
