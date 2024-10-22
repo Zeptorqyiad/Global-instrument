@@ -73,13 +73,13 @@ $(document).ready(function () {
             }, 300)
 
             if (response.trim() === 'success') {
-               successPopup.classList.add('open')
-            } else {
-               errorPopup.classList.add('open')
+					successPopup.classList.add('open')
+				} else {
+					errorPopup.classList.add('open')
             }
          },
          error: function () {
-            alert('Произошла ошибка при отправке. Попробуйте снова.')
+				alert('Произошла ошибка при отправке. Попробуйте снова.')
          },
       })
    })
