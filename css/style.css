@@ -2362,7 +2362,7 @@ input::placeholder {
   text-align: left;
 }
 
-.form {
+#form {
   display: flex;
   flex-wrap: wrap;
 }
@@ -2580,6 +2580,38 @@ textarea::placeholder {
   border: 1px solid black;
   box-sizing: content-box;
   border-radius: 5px;
+}
+
+.successPopup__content {
+  border-radius: 10px;
+}
+.successPopup__content h3 {
+  color: rgb(29, 29, 29);
+  font-family: Stem;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 150%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.successPopup__content p {
+  color: rgb(82, 82, 82);
+  font-family: Stem;
+  font-size: 12px;
+  font-weight: 350;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.successPopup__content span {
+  color: rgb(29, 29, 29);
+  font-family: Stem;
+  font-size: 20px;
+  font-weight: 350;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
 }
 
 :root {

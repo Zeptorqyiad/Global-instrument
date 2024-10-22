@@ -7,9 +7,11 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="icon" href="./assets/icon/Logo.ico" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<script src="./js/geo.js"></script>
 </head>
 
 <body>
@@ -230,19 +232,20 @@
 					<a href="#" class="popup__close close-popup"></a>
 					<p>У Вас есть вопросы ? Оставьте заявку ! И мы перезвоним Вам !</p>
 					<div class="input-wrapper">
-						<form class="form" id="form" class="form__body">
+						<form action="sendmail.php" method="POST" id="form" class="form__body">
 							<div class="input-ls">
 								<input class="form__input _req" type="text" placeholder="Ваше имя" name="name">
 								<input class="form__input _req _email" type="email" placeholder="Ваша электронная почта"
 									name="email">
 							</div>
 							<div class="input-rs">
-								<input class="form__input _req" type="tel" name="tel" placeholder="Ваш телефон">
+								<input class="form__input _req" id="phone" type="text" name="telephone"
+									placeholder="Ваш телефон">
 								<input class="form__input _req" type="text" name="city" placeholder="Город">
 							</div>
-							<textarea class="form__input _req" cols="468" rows="4" charswidth="23" name="textarea"
+							<textarea class="form__input _req" cols="468" rows="4" charswidth="23" name="message"
 								placeholder="Задайте Ваш вопрос"></textarea>
-							<button type="submit" id="req" class="header__btn-application">Оставить заявку</button>
+							<button type="submit" class="header__btn-application">Оставить заявку</button>
 						</form>
 					</div>
 				</div>
@@ -254,38 +257,54 @@
 					<a href="#" class="popup__close close-popup"></a>
 					<p>У Вас есть вопросы ? Оставьте заявку ! И мы перезвоним Вам !</p>
 					<div class="input-wrapper">
-						<form class="form" id="form" class="form__body">
+						<form action="sendmail.php" method="POST" id="form" class="form__body">
 							<div class="input-ls">
 								<input class="form__input _req" type="text" placeholder="Ваше имя" name="name">
 								<input class="form__input _req _email" type="email" placeholder="Ваша электронная почта"
 									name="email">
 							</div>
 							<div class="input-rs">
-								<input class="form__input _req" type="tel" name="tel" placeholder="Ваш телефон">
+								<input class="form__input _req" id="phone2" type="text" name="telephone"
+									placeholder="Ваш телефон">
 								<input class="form__input _req" type="text" name="city" placeholder="Город">
 							</div>
-							<textarea class="form__input _req" cols="468" rows="4" charswidth="23" name="textarea"
+							<textarea class="form__input _req" cols="468" rows="4" charswidth="23" name="message"
 								placeholder="Задайте Ваш вопрос"></textarea>
-							<button type="submit" id="req" class="header__btn-application">Заказать звонок</button>
+							<button type="submit" class="header__btn-application">Заказать звонок</button>
 						</form>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div id="popup-3" class="popup">
+		<div id="successPopup" class="popup">
 			<div class="popup__body">
-				<div class="popup__content">
+				<div class="popup__content successPopup__content">
 					<a href="#" class="popup__close close-popup"></a>
 					<h3>Заявка отправлена</h3>
 					<p>Мы свяжемся с Вами в рабочие часы в ближайшее время!</p>
-					<p>Спасибо!</p>
+					<span>Спасибо!</span>
+				</div>
+			</div>
+		</div>
+		<div id="errorPopup" class="popup">
+			<div class="popup__body">
+				<div class="popup__content successPopup__content">
+					<a href="#" class="popup__close close-popup"></a>
+					<h3>Ошибка</h3>
+					<p>Произошла ошибка при отправке. Попробуйте позже.</p>
+					<span>Спасибо!</span>
 				</div>
 			</div>
 		</div>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 	<script src="./js/swiper.js"></script>
+	<script src="https://unpkg.com/imask"></script>
 	<script src="js/script.js"></script>
+	<script src="./js/inputValidate.js"></script>
+	<script src="./js/mailSender.js"></script>
+	<script src="./js/popup.js"></script>
 </body>
 
 </html>
