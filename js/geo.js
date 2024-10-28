@@ -21,7 +21,35 @@ searchCityPanel.addEventListener('click', () => {
    geoCloseIcon.style.display = 'none'
 })
 
-// searchCityPanel.onfocus = () => {}
+const geoBtnM = document.getElementById('geoBtnM')
+const geoBtnP = document.getElementById('geoBtnP')
+const geoCity = document.getElementById('GeoCity')
+const getPopup = document.getElementById('geoPopup')
+
+let defaultCity
+
+localStorage.setItem('city', defaultCity)
+console.log(localStorage.getItem('city'))
+
+if (localStorage.getItem('city') !== 'Москва') {
+   getPopup.classList.add('change')
+   geoBtnP.onclick = () => {
+      getPopup.classList.remove('change')
+      defaultCity = {
+         city: 'Moscow',
+      }
+      localStorage.setItem('city', 'Москва')
+      console.log(localStorage.getItem('city'))
+   }
+   geoBtnM.onclick = () => {
+		getPopup.classList.remove('change')
+		openPanel()
+   }
+   geoCity.innerHTML = 'Москва'
+} else {
+   getPopup.classList.remove('change')
+   geoCity.innerHTML // Доделать
+}
 
 navigator.geolocation.getCurrentPosition(success, error, {
    enableHighAccuracy: true,
