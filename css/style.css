@@ -2660,117 +2660,6 @@ textarea::placeholder {
     width: 100%;
   }
 }
-.custom-select-wrapper select {
-  display: none;
-}
-
-.custom-select {
-  position: relative;
-  display: inline-block;
-}
-.custom-select::before {
-  content: "";
-  background-image: url("../../assets/icon/geo-alt-fill-svgrepo-com.svg");
-  background-position: center left;
-  background-size: auto;
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 3px;
-  left: 0;
-}
-
-.custom-select-trigger {
-  position: relative;
-  display: block;
-  width: 160px;
-  font-size: 15px;
-  padding-left: 20px;
-  font-weight: 300;
-  color: #000;
-  line-height: 60px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.custom-options {
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  top: 100%;
-  width: 600px;
-  left: 0;
-  right: 0;
-  min-width: 100%;
-  margin: 15px 0;
-  border: 1px solid #b5b5b5;
-  border-radius: 4px;
-  box-sizing: border-box;
-  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.07);
-  background: #fff;
-  transition: all 0.4s ease-in-out;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transform: translateY(-15px);
-}
-
-.custom-select.opened .custom-options {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: all;
-  transform: translateY(0);
-}
-
-.custom-options:before {
-  position: absolute;
-  display: block;
-  content: "";
-  bottom: 100%;
-  right: 25px;
-  width: 7px;
-  height: 7px;
-  margin-bottom: -4px;
-  border-top: 1px solid #b5b5b5;
-  border-left: 1px solid #b5b5b5;
-  background: #fff;
-  transform: rotate(45deg);
-  transition: all 0.4s ease-in-out;
-}
-
-.option-hover:before {
-  background: #f9f9f9;
-}
-
-.custom-option {
-  position: relative;
-  display: block;
-  padding: 0 22px;
-  border-bottom: 1px solid #b5b5b5;
-  font-size: 18px;
-  font-weight: 600;
-  color: #b5b5b5;
-  line-height: 47px;
-  cursor: pointer;
-  transition: all 0.4s ease-in-out;
-}
-
-.custom-option:first-of-type {
-  border-radius: 4px 4px 0 0;
-}
-
-.custom-option:last-of-type {
-  border-bottom: 0;
-  border-radius: 0 0 4px 4px;
-}
-
-.custom-option:hover,
-.custom-option.selection {
-  background: #f9f9f9;
-}
-
 :root {
   --bg-color: #f7f8f8;
   --dark-main-text: #1d1d1d;
@@ -3066,7 +2955,7 @@ textarea::placeholder {
 }
 
 body._lock {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 main {
@@ -3176,8 +3065,9 @@ body {
 }
 
 .header__content-bottom__container {
+  position: relative;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   height: 80px;
   gap: 66px;
@@ -3193,7 +3083,7 @@ body {
 }
 
 .bottom__list li:not(:last-child) {
-  margin-right: 82px;
+  margin-right: 50px;
 }
 
 .callback__btn {
@@ -3365,6 +3255,91 @@ body {
     width: 300px;
   }
 }
+.geo-block {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+.geo-block img {
+  margin-top: -4px;
+  width: 26px;
+  height: 24px;
+}
+.geo-block span {
+  color: var(--orange-color);
+  font-family: Stem;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.geo__list-item {
+  position: absolute;
+  width: 18vw;
+  height: 40vh;
+  height: 40svh;
+  top: 100px;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: transform 1s, opacity 1s;
+  transform: translateY(-10%);
+  will-change: transform, opacity;
+  background: var(--orange-color);
+  border-radius: 30px;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+  padding: 20px;
+}
+
+.geo__list-item.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.search-input {
+  background: var(--bg-color);
+  min-width: 90%;
+  border: none;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+  transition: min-width 0.3s;
+}
+.search-input ::-moz-placeholder {
+  font-size: 18px;
+  letter-spacing: 1;
+}
+.search-input ::placeholder {
+  font-size: 18px;
+  letter-spacing: 1;
+}
+
+.close-icon img {
+  width: 20px;
+}
+
+#geoHead {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.city__choise-block {
+  width: 100%;
+  height: 290px;
+  border-radius: 10px;
+  background: var(--bg-color);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
 :root {
   --bg-color: #f7f8f8;
   --dark-main-text: #1d1d1d;

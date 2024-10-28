@@ -12,7 +12,7 @@
 	background-color: var(--bg-color);
 }
 body._lock {
-	overflow: hidden;
+	overflow-y: hidden;
 }
 main {
 	display: flex;
