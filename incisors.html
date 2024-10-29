@@ -21,6 +21,10 @@
 					<div class="header__logo">
 						<a href="../index.html"><img src="../assets/image/header/Logo.png" alt="Logotype"></a>
 					</div>
+					<a href="##" class="geoMin-block">
+						<img src="./assets/icon/geo-icon.png" alt="Geo">
+						<span id="GeoCity-min"></span>
+					</a>
 					<div class="header__block-tel">
 						<a href="tel:88007071608">8 800 707-16-08</a>
 						<a href="tel:+74951616333">+7 495 161-63-33</a>
@@ -56,6 +60,85 @@
 			</div>
 			<div class="header__content-bottom">
 				<div class="header__content-bottom__container">
+					<a href="##" class="geo-block">
+						<img src="./assets/icon/geo-icon.png" alt="Geo">
+						<span id="GeoCity"></span>
+					</a>
+					<div id="geoPopup" class="popup-geo">
+						<div class="geoPopup__body">
+							<div class="geoPopup__content">
+								<p>Ваш регион:</p>
+								<span>Москва</span>
+								<div>
+									<button id="geoBtnM" class="geoM">НЕТ</button>
+									<button id="geoBtnP">ДА</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="geo__list-item">
+						<div id="geoHead">
+							<input type="search" class="search-input" placeholder="Введите ваш город..." name="search-panel" id="searchPanel">
+							<a href="##" class="close-icon">
+								<img src="./assets/icon/Close-icon.svg" alt="Close-icon">
+							</a>
+						</div>
+						<div class="city__choise-block">
+							<p>A</p>
+							<span class="city-link"></span>
+							<p>Б</p>
+							<span class="city-link"></span>
+							<span class="city-link"></span>
+							<span class="city-link"></span>
+							<p>В</p>
+							<span class="city-link"></span>
+							<span class="city-link"></span>
+							<p>Д</p>
+							<span class="city-link"></span>
+							<p>Е</p>
+							<span class="city-link"></span>
+							<p>И</p>
+							<span class="city-link"></span>
+							<p>К</p>
+							<span class="city-link"></span>
+							<span class="city-link"></span>
+							<span class="city-link"></span>
+							<span class="city-link"></span>
+							<p>М</p>
+							<span class="city-link"></span>
+							<span class="city-link"></span>
+							<span class="city-link"></span>
+							<p>Н</p>
+							<span class="city-link"></span>
+							<span class="city-link"></span>
+							<span class="city-link"></span>
+							<p>О</p>
+							<span class="city-link"></span>
+							<span class="city-link"></span>
+							<p>П</p>
+							<span class="city-link"></span>
+							<p>Р</p>
+							<span class="city-link"></span>
+							<p>С</p>
+							<span class="city-link"></span>
+							<span class="city-link"></span>
+							<span class="city-link"></span>
+							<span class="city-link"></span>
+							<p>Т</p>
+							<span class="city-link"></span>
+							<span class="city-link"></span>
+							<p>У</p>
+							<span class="city-link"></span>
+							<p>Х</p>
+							<span class="city-link"></span>
+							<p>Ч</p>
+							<span class="city-link"></span>
+							<span class="city-link"></span>
+							<p>Я</p>
+							<span class="city-link"></span>
+							<span class="city-link"></span>
+						</div>
+					</div>
 					<nav class="menu__body">
 						<ul class="menu__list bottom__list">
 							<li><a href="./repair.html" class="header__link-bottom">Ремонт барабанов</a></li>
@@ -322,7 +405,7 @@
 							<div class="input-rs">
 								<input class="form__input _req" id="phone" type="text" name="telephone"
 									placeholder="Ваш телефон">
-								<input class="form__input _req" type="text" name="city" placeholder="Город">
+								<input class="form__input _req" id="cityInput" type="text" name="city" placeholder="Город">
 							</div>
 							<textarea class="form__input _req" cols="468" rows="4" charswidth="23" name="message"
 								placeholder="Задайте Ваш вопрос"></textarea>
@@ -347,7 +430,7 @@
 							<div class="input-rs">
 								<input class="form__input _req" id="phone2" type="text" name="telephone"
 									placeholder="Ваш телефон">
-								<input class="form__input _req" type="text" name="city" placeholder="Город">
+								<input class="form__input _req" id="cityInput-2" type="text" name="city" placeholder="Город">
 							</div>
 							<textarea class="form__input _req" cols="468" rows="4" charswidth="23" name="message"
 								placeholder="Задайте Ваш вопрос"></textarea>
