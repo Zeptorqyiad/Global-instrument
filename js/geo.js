@@ -43,7 +43,7 @@ cityLink.forEach((el, i) => (el.textContent = cityArray[i]))
 const geoBlock = document.querySelector('.geo-block')
 const geoPanel = document.querySelector('.geo__list-item')
 const geoCloseIcon = document.querySelector('.close-icon')
-const searchCityPanel = document.getElementById('searchPanel')
+// const searchCityPanel = document.getElementById('searchPanel')
 
 const getCityMin = document.getElementById('GeoCity-min')
 const geoBlockMin = document.querySelector('.geoMin-block')
@@ -63,10 +63,19 @@ geoCloseIcon.onclick = () => {
       document.body.classList.remove('_lock')
    }
 }
-searchCityPanel.addEventListener('click', () => {
-   searchCityPanel.style.minWidth = '100%'
-   geoCloseIcon.style.display = 'none'
-})
+
+// searchCityPanel.addEventListener('click', (e) => {
+//    if (e.offsetX <= 280 && e.offsetY <= 40) {
+//       searchCityPanel.style.minWidth = '100%'
+//       geoCloseIcon.style.display = 'none'
+//    } else if (e.offsetX > 280 & e.offsetY > 40) {
+//       searchCityPanel.style.minWidth = '90%'
+//       geoCloseIcon.style.display = 'block'
+//    }
+// })
+
+// Титульный город
+let cityTitle = document.getElementById('cityGeoParam')
 
 // GeoPopupLoad
 const geoBtnM = document.getElementById('geoBtnM')
@@ -77,24 +86,25 @@ const getPopup = document.getElementById('geoPopup')
 let defaultCity = localStorage
 window.addEventListener('load', singleLoadPopup)
 
+// Navigator
+navigator.geolocation.getCurrentPosition(success, error, {
+   enableHighAccuracy: true,
+})
+function success({ coords }) {
+   const { latitude, longitude } = coords
+   const position = [latitude, longitude]
+   console.log(position)
+}
+function error({ message }) {
+   console.log(message)
+}
+
 function singleLoadPopup() {
    localStorage.setItem('city', (localStorage.getItem('city') || '') + '')
 
    if (localStorage.getItem('city') == '') {
-      // Navigator
-      navigator.geolocation.getCurrentPosition(success, error, {
-         enableHighAccuracy: true,
-      })
-      function success({ coords }) {
-         const { latitude, longitude } = coords
-         const position = [latitude, longitude]
-         console.log(position)
-      }
-      function error({ message }) {
-         console.log(message)
-      }
-
       geoCity.innerHTML = 'Москва'
+      cityTitle.textContent = geoCity.innerHTML
       getPopup.classList.add('change')
       geoBtnP.onclick = () => {
          defaultCity.city = 'Москва'
@@ -122,12 +132,14 @@ function cityChoosePanel() {
             city: cityValue,
          }
          geoCity.innerHTML = defaultCity.city
+         cityTitle.textContent = defaultCity.city + '.'
          geoPanel.classList.remove('active')
 
          return defaultCity
       })
    )
 }
+cityTitle.textContent = defaultCity.city + '.'
 
 const cityInput = document.getElementById('cityInput')
 const cityInput2 = document.getElementById('cityInput-2')
@@ -144,5 +156,3 @@ if (localStorage.getItem('city') == 'Москва') {
    defaultCity.city = 'Москва'
    geoCity.innerHTML = defaultCity.city
 }
-
-// ДОбавить проверку если поле не пустое, то width 100%
